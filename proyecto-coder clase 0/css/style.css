@@ -1,0 +1,496 @@
+/*---------------------------------------------- valores default 0 --------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------Grids maquetado---------------------------------- */
+
+.grid-contenedor-padre{
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    grid-template-rows: 50vh repeat(2,80vh) 50vh;
+    grid-template-areas: 
+    "header header header"
+    "main aside aside"
+    "main aside aside"
+    "footer footer footer"
+    ;
+}
+
+main{
+    grid-area: main;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+aside{
+    grid-area: aside;
+}
+
+
+
+
+/*---------------------------------------Media queries------------------------------------ */
+
+
+
+
+
+
+
+/*------------------------------------ Barra navegadora y nav con titulo----------------*/
+
+.barra-navegadora ul{
+    gap:5rem;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;    
+    background-color: rgba(0, 0, 0, 0.992);
+    margin:40px 80px;
+}
+.barra-navegadora a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, sans-serif;
+}
+.barra-navegadora li {
+    list-style:none;
+    font-weight: 900;
+    font-family: -apple-system, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.barra-navegadora li:hover{
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.582);
+    transition-delay: 0.7ms;
+}
+
+.h1 {
+    flex-wrap: wrap;
+    font-size: 5rem;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Michroma', sans-serif;
+
+}
+
+.navegador {
+    margin-top: 20px;
+    position: relative;
+    left: 30%;
+    border-style: none;
+    padding: 9px 22px 9px 22px;
+    border-radius: 30px;
+    border: 2px solid #00000058;
+    font-size: inherit;
+    font-family: inherit;
+    width:40%;
+
+}
+
+.navegador input {
+    border: none;
+    background-image: url(../imagenes/icono-busqueda.png);
+    background-position: 100%;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    width: 100%;
+    transition: all 1s;
+    font: inherit;
+}
+
+
+/*---------------------------------------------- main+section+article-------------------------*/
+
+
+.section1 article {
+    margin: 10%;
+    margin-bottom: 30%;
+}
+
+.section1 article h2{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.342);
+    color: rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+}
+
+.section1 article label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(72, 72, 72, 0.588);
+    font-family: 'Michroma', sans-serif;
+    margin: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/* ---------------------------------------aside--------------------------------------------------- */
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 8px solid black;
+    margin: 100px 0px;
+}
+.aside div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.aside p{
+    margin: 20px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: white;
+
+}
+
+.aside a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.aside a:hover{
+    background-color: rgba(165, 42, 42, 0.286);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+/*--------------------------------------- Sede+h3+iframe maps---------------- ------------ */
+
+.section2{
+    margin: 20px;
+    margin-bottom: 90px;
+}
+
+.section2 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section2 article iframe {
+    height: 20rem;
+    width: 50%;
+    display:flex;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.section2 article h3 {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3.5rem;
+    font-size: 2rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+/*------------------------------------------ footer(AYUDA y REDES) -----------------*/
+
+footer{ 
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:60% 40%;
+    grid-template-rows: 10vh repeat(2,20vh);
+    grid-template-areas:
+    "Redes-a Redes-a"
+    "Ayuda-a Form"
+    "Ayuda-a Copyright"
+    ;
+}
+
+.copyright{
+    grid-area: Copyright;
+}
+.copyright img{
+    width:40px;
+}
+.copyright{
+    color: white;
+    display: flex;
+    align-items:flex-end;
+    justify-content: end;
+    padding: 20px;
+    margin-top:  20px;
+}
+
+.ayuda-ayuda{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    grid-area: Ayuda-a;
+}
+
+.ayuda-ayuda h4{
+    padding: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+.ayuda-ayuda a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+.ayuda-ayuda a:hover{
+
+    background-color: rgb(165, 42, 42);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.ayuda-redes-a{
+    grid-area: Redes-a;
+}
+
+.ayuda-redes-a h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.ayuda-redes-a {
+    display: flex;
+    position: relative;
+    justify-content: stretch;
+    align-items:center;
+    top: 30px;
+}
+
+
+
+form{
+    grid-area: Form;
+}
+
+
+
+
+
+/*-------------------------------- Pagina Contacto -------------*/
+
+.contacto-section{
+
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 50rem;
+}
+
+.contacto-section h2{
+    font-size: 4rem;
+    position: relative;
+    bottom: 35rem;
+    font-family:'Courier New', Courier, monospace
+}
+
+.contacto-section article img{
+
+    position: relative;
+    bottom: 20rem;
+    left: 32rem;
+}
+
+.contacto-section textarea {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 4.5rem; 
+    bottom: 10rem;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.contacto-section input{
+    position: relative;
+    left: 32rem; 
+    bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 30px;
+    width: 120px;
+}
+
+
+
+
+
+/* -----------------------------------Pagina Stock en linea---- --------------------------- */
+
+.productos h2{
+    color:white ;
+    background-color: rgba(255, 0, 0, 0.204);
+    display: flex;
+    justify-content: center;
+    margin: 30rem;
+    padding:7px;
+    font-family:fantasy;
+    font-size: 5rem;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+
+}
+
+div .guantes-ex{
+    margin: 30px;
+}
+
+.guantes-ex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px;
+    padding: 5rem;
+    width:1500px;
+    height: 650px;
+} 
+
+.guantes-ex h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.guantes-ex img{
+    width: 30%;
+
+}
+
+.guantes-ex label{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font: 900;
+    font-size: 2.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.guantes-ex a{
+    color: black;
+    text-decoration: none;
+    margin: 30px;
+    border: solid 2px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.guantes-ex a:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.h4{
+
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ----------------------------Pagina Imagenes--------------------------------*/
+
+.imagenes-box{
+    margin:35rem 0rem;
+    overflow-x: scroll;
+}
+
+.imagenes-box article{
+    justify-content: space-around;
+    display: flex;
+    align-content: center;
+
+}
+
+.imagenes-box article img{
+    margin: 25px;
+    width: 50rem;
+} 
+
+.imagenes-box div{
+    background-color: rgba(0, 0, 0, 0.362);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagenes-box div h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* ----------------------------------Pagina sede-.--------------- */
+
+.titulo-sede{
+    margin: 25rem 0rem;
+    background-color: rgba(0, 0, 0, 0.195);
+    padding: 20px;
+}
+
+.section2 div h3{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section2 div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}

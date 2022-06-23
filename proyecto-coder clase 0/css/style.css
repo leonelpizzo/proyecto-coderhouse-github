@@ -74,11 +74,12 @@ aside{
 
 .barra-navegadora li:hover{
     border-radius: 20px;
-    background-color: rgba(255, 0, 0, 0.582);
-    transition-delay: 0.7ms;
+    background-color:rgba(128, 128, 128, 0.418);
+    transition-delay: 0.5ms;
 }
 
 .h1 {
+    text-shadow:10px 10px 8px gray;
     flex-wrap: wrap;
     font-size: 5rem;
     padding: 40px;
@@ -104,12 +105,17 @@ aside{
 
 .navegador input {
     border: none;
+    width: 100%;
+}
+
+.navegador:hover input{
+    border: none;
     background-image: url(../imagenes/icono-busqueda.png);
     background-position: 100%;
     background-size: 19px;
     background-repeat: no-repeat;
     width: 100%;
-    transition: all 1s;
+    transition: 2s;
     font: inherit;
 }
 
@@ -145,12 +151,19 @@ aside{
 
 /* ---------------------------------------aside--------------------------------------------------- */
 
-.aside{
+.aside:hover{
+    clip-path: circle(100% at right center);
     display: flex;
     flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 8px solid black;
     margin: 100px 0px;
+}
+
+.aside{
+    clip-path: circle(10% at right center);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
 .aside div{
     display: flex;
@@ -160,6 +173,7 @@ aside{
 }
 
 .aside p{
+    text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
     margin: 20px;
     text-align: center;
     font-size: 2rem;
@@ -174,12 +188,11 @@ aside{
     justify-content: center;
     color: black;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .aside a:hover{
     background-color: rgba(165, 42, 42, 0.286);
-    padding: 10px;
     border-radius: 2px;
 }
 
@@ -364,10 +377,10 @@ form{
 
 .productos h2{
     color:white ;
-    background-color: rgba(255, 0, 0, 0.204);
+    background-color: rgba(255, 0, 0, 0.384);
     display: flex;
     justify-content: center;
-    margin: 30rem;
+    margin: 15rem;
     padding:7px;
     font-family:fantasy;
     font-size: 5rem;
@@ -380,20 +393,18 @@ form{
 
 }
 
-div .guantes-ex{
+ div .guantes-ex{
     margin: 30px;
-}
+ }
 
 .guantes-ex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     border: solid 3px;
     padding: 5rem;
-    width:1500px;
-    height: 650px;
-} 
+}
 
 .guantes-ex h3{
     text-align: center;
@@ -402,8 +413,10 @@ div .guantes-ex{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.guantes-ex img{
-    width: 30%;
+.guantes-ex img:hover{
+    transform:scale(2);
+    transition: 2s;
+    border: 2px solid black;
 
 }
 
@@ -418,17 +431,17 @@ div .guantes-ex{
 }
 
 .guantes-ex a{
+
     color: black;
     text-decoration: none;
-    margin: 30px;
+    margin: 20px;
     border: solid 2px;
     padding: 10px;
     border-radius: 20px;
 }
 
-
 .guantes-ex a:hover{
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(80, 78, 78, 0.582);
 }
 
 .h4{

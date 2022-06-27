@@ -162,7 +162,7 @@ aside{
 
 .aside{
     clip-path: circle(10% at right center);
-    transition-duration: 2s;
+    transition-duration: 1.5s;
     transition-timing-function: ease-in-out;
 }
 .aside div{

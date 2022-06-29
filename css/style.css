@@ -5,59 +5,512 @@
     box-sizing: border-box;
 }
 
-/* ------------------------------------Grids maquetado---------------------------------- */
-
-.grid-contenedor-padre{
-    display: grid;
-    grid-template-columns: 80% 10% 10%;
-    grid-template-rows: 50vh repeat(2,80vh) 50vh;
-    grid-template-areas: 
-    "header header header"
-    "main aside aside"
-    "main aside aside"
-    "footer footer footer"
-    ;
+/* -----------------HASTA 575(PANTALLAS MINIS)-------------------- */
+@media screen and (max-width:575px){
+    .copyright{
+        font-size: 3px;
+    }
+    .copyright img{
+        width: 15px;
+    }
+    .ayuda-ayuda{
+        flex-direction: column;
+    }
+    .ayuda-ayuda a{
+        position: relative;
+        left: 20px;
+        font-size: 7px;
+        font-weight:bold;
+    }
+    .ayuda-ayuda h4{
+        position: relative;
+        left: 3px;
+        font-size: 15px;
+    }
+    .ayuda-redes-a h4{
+        font-size: 15px;
+    }
+    .ayuda-redes-a img{
+        width: 15px;
+    }
+    textarea{
+        font-size: 3px;
+    }
+    input{
+        font-size: 7px;
+    }
+    .section1{
+        margin-top: 8rem;
+        margin-bottom: 20rem;
+    }
+    .section1 h2 strong{
+        text-align: center;
+        font-size: 20px;
+    }
+    .section1 .label-section1{
+        font-size: 12.5px;
+    }
+    .section2 article>h3{
+        font-size: 1rem;
+    }
+    .section2 article>iframe{
+        width: 100rem;
+    }
+    .barra-navegadora li>a{
+        text-align: center;
+        font-size: 9px;
+    }
+    .barra-navegadora ul{
+        border-radius: 20px;
+        flex-direction:column;
+    }
+    .h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .grid-contenedor-padre{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: 
+        "header header"
+        "main1 aside"
+        "main2 aside"
+        "footer footer"
+        ;
+    }
+    main .section1{
+        grid-area: main1;
+    }
+    main .section2{
+        grid-area: main2;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+    aside{
+        grid-area: aside;
+    }
+    .aside:hover{
+        clip-path: circle(100% at right center);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 2px solid black;
+    }  
+    .aside{
+        margin: 25px 0px;
+        background-color:white;
+        box-shadow: 10px 20px 50px 1px;
+        clip-path: circle(13% at right center);
+        transition-timing-function: ease-in-out;
+        transition-duration: 2s;
+    }
+    .aside div{
+        margin-top: 100px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .aside p{
+        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
+        text-align: center;
+        font-size: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.452);
+        color: white;
+    }
+    .aside a{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    .aside a:hover{
+        background-color: rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+    }
 }
 
-main{
-    grid-area: main;
+/* ------------------DE 576 A 768PX------------------------------*/
+@media screen and (min-width:576px) and (max-width:768px){  
+    .copyright{
+        font-size: 7px;
+    }
+    .copyright img{
+        width: 20px;
+    }
+    .ayuda-ayuda a{
+        font-size: 13px;
+        position: relative;
+        right: 30px;
+        font-weight:bold;
+    }
+    .ayuda-ayuda{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .ayuda-ayuda h4{
+        font-size: 1.7rem;
+    }
+    .ayuda-redes-a h4{
+        font-size: 1.7rem;
+    }
+    .ayuda-redes-a img{
+        width: 29px;
+    }
+    textarea{
+        font-size: 8px;
+    }
+    .section1{
+        margin-top: 8rem;
+        margin-bottom: 20rem;
+    }
+    .section1 h2 strong{
+        text-align: center;
+        font-size: 20px;
+    }
+    .section1 .label-section1{
+        font-size: 15px;
+    }
+    .section2 article>h3{
+        font-size: 1rem;
+    }
+    .barra-navegadora li>a{
+        font-size: 12px;
+    }
+    .barra-navegadora ul{
+        border-radius: 60px;
+        flex-direction:column;
+    }
+    .h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .textarea-footer{
+        margin-right: 20px;
+    }
+    .grid-contenedor-padre{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: 
+        "header header"
+        "main1 aside"
+        "main2 aside"
+        "footer footer"
+        ;
+    } 
+    main .section1{
+        grid-area: main1;
+    }
+    main .section2{
+        grid-area: main2;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+    aside{
+        grid-area: aside;
+    }
+    .aside:hover{
+        clip-path: circle(100% at right center);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 8px solid black;
+        margin: 30px 0px;
+    }
+    .aside{
+        background-color:white;
+        box-shadow: 20px 10px 40px 20px;
+        clip-path: circle(10% at right center);
+        transition-timing-function: ease-in-out;
+        transition-duration: 2s;
+    }
+    .aside div{
+        margin-top: 100px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    } 
+    .aside p{
+        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.452);
+        color: white;
+    } 
+    .aside a{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .aside a:hover{
+        background-color: rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+    }
 }
 
-header{
-    grid-area: header;
+
+/* ------------------DE 769 A 992PX---------------------------- */
+@media screen and (min-width:769px) and (max-width:992px)
+{
+    .h1{
+        font-size: 4rem;
+    }
+    .section2 article h3{
+        font-size: 2rem;
+    }
+    .textarea-footer{
+        position: relative;
+        right: 25px;
+    }
+    textarea{
+        font-size: 10px;
+    }
+    .section1{
+        margin-top: 15rem;
+    }
+    .section1 h2 strong{
+        text-align: center;
+        font-size: 30px;
+    }
+    .barra-navegadora li>a{
+        font-size: 18px;
+    }
+    .barra-navegadora ul{
+        border-radius: 80px;
+        flex-direction:column;
+    }
+    .h1{
+        text-align: center;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .ayuda-ayuda a{
+        font-size: 13px;
+        position: relative;
+        right: 30px;
+        font-weight:bold;
+    }
+    .ayuda-ayuda{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .ayuda-ayuda h4{
+        font-size: 2rem;
+    }
+    .ayuda-redes-a h4{
+        font-size: 2rem;
+    }
+    .ayuda-redes-a img{
+        width: 35px;
+    }
+    .copyright img{
+        width: 30px;
+    }
+    .textarea-footer{
+        margin-right: 20px;
+    }
+    .grid-contenedor-padre{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: (repeat,1fr);
+        grid-template-areas: 
+        "header header "
+        "main1 aside"
+        "main2 aside"
+        "footer footer"
+        ;
+    }
+    main .section1{
+        grid-area: main1;
+    }
+    main .section2{
+        grid-area: main2;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+    aside{
+        grid-area: aside;
+    }
+    .aside:hover{
+        clip-path: circle(100% at right center);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 8px solid black;
+        margin: 30px 0px;
+    }
+    .aside{
+        background-color:white;
+        box-shadow: 20px 10px 40px 20px;
+        clip-path: circle(10% at right center);
+        transition-timing-function: ease-in-out;
+        transition-duration: 2s;
+    }
+    .aside div{
+        margin-top: 100px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .aside p{
+        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.452);
+        color: white;
+    }
+    .aside a{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .aside a:hover{
+        background-color: rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+    }
 }
 
-footer{
-    grid-area: footer;
+
+/* ------------DE 993PX EN ADELANTE------------- */
+@media(min-width:993px){
+
+    .copyright img{
+        width:40px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .ayuda-ayuda h4{
+        font-size: 3rem;
+    }
+    .ayuda-ayuda a{
+        font-weight: 900;
+    }
+    .ayuda-redes-a h4{
+        font-size: 3rem;
+    }
+    .section2 article h3{
+        font-size: 2rem;
+    }
+    .h1{
+        font-size: 5rem;
+    }
+    .barra-navegadora li>a{
+        font-size: 18px;
+        padding: 7px;
+    }
+    .textarea-footer{
+        margin-right: 20px;
+    }
+    .grid-contenedor-padre{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 50vh;
+        grid-template-areas: 
+        "header header "
+        "main1 aside"
+        "main2 aside"
+        "footer footer"
+        ;
+    }  
+    main .section1{
+        grid-area: main1;
+    }  
+    main .section2{
+        grid-area: main2;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+    aside{
+        grid-area: aside;
+    }
+    .ayuda-ayuda{
+    grid-area: Ayuda-a;
+    }
+    .ayuda-ayuda{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .aside:hover{
+        clip-path: circle(100% at right center);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 8px solid black;
+        margin: 30px 0px;
+    }
+    .aside{
+        background-color:white;
+        box-shadow: 20px 10px 40px 20px;
+        clip-path: circle(10% at right center);
+        transition-timing-function: ease-in-out;
+        transition-duration: 2s;
+    }
+    .aside div{
+        margin-top: 100px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .aside p{
+        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.452);
+        color: white;
+    }
+    .aside a{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .aside a:hover{
+        background-color: rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+    }
 }
-
-aside{
-    grid-area: aside;
-}
-
-
-
-
-/*---------------------------------------Media queries------------------------------------ */
-
-
-
-
-
 
 
 /*------------------------------------ Barra navegadora y nav con titulo----------------*/
 
 .barra-navegadora ul{
-    box-shadow: 2px 10px 50px;
-    gap:5rem;
+    box-shadow: 1px 20px 60px;
+    gap:1.5rem;
     display:flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;    
     background-color: rgba(0, 0, 0, 0.992);
-    margin:40px 80px;
+    margin:40px 100px;
 }
+
 .barra-navegadora a {
     font-size: 1.5rem;
     font-weight: 900;
@@ -80,9 +533,8 @@ aside{
 }
 
 .h1 {
-    text-shadow:10px 10px 8px gray;
+    text-shadow:10px 18px 12px rgba(0, 0, 0, 0.555);
     flex-wrap: wrap;
-    font-size: 5rem;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -109,6 +561,7 @@ aside{
     width: 100%;
 }
 
+
 .navegador:hover input{
     border: none;
     background-image: url(../imagenes/icono-busqueda.png);
@@ -125,7 +578,7 @@ aside{
 
 
 .section1 article {
-    margin: 10%;
+    margin: 22%;
     margin-bottom: 30%;
 }
 
@@ -150,53 +603,6 @@ aside{
     font-weight: 900;
 }
 
-/* ---------------------------------------aside--------------------------------------------------- */
-
-.aside:hover{
-    clip-path: circle(100% at right center);
-    display: flex;
-    flex-direction: column;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 8px solid black;
-    margin: 100px 0px;
-}
-
-.aside{
-    clip-path: circle(10% at right center);
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
-}
-.aside div{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.aside p{
-    text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
-    margin: 20px;
-    text-align: center;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.452);
-    color: white;
-
-}
-
-.aside a{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.aside a:hover{
-    background-color: rgba(165, 42, 42, 0.286);
-    border-radius: 2px;
-}
-
 /*--------------------------------------- Sede+h3+iframe maps---------------- ------------ */
 
 .section2{
@@ -205,6 +611,7 @@ aside{
 }
 
 .section2 article {
+    margin: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -213,9 +620,9 @@ aside{
 
 .section2 article iframe {
     height: 20rem;
-    width: 50%;
+    width: 70%;
     display:flex;
-    border: 5px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
 }
 
 .section2 article h3 {
@@ -223,8 +630,6 @@ aside{
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 3.5rem;
-    font-size: 2rem;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
@@ -250,35 +655,24 @@ footer{
 .copyright{
     grid-area: Copyright;
 }
-.copyright img{
-    width:40px;
-}
+
 .copyright{
     color: white;
     display: flex;
     align-items:flex-end;
     justify-content: end;
     padding: 20px;
-    margin-top:  20px;
 }
 
-.ayuda-ayuda{
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    grid-area: Ayuda-a;
-}
 
 .ayuda-ayuda h4{
     padding: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    font-size: 3rem;
 }
 
 .ayuda-ayuda a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 900;
     margin: 10px;
     color: white;
     text-decoration: none;
@@ -289,7 +683,7 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 
@@ -299,7 +693,6 @@ footer{
 
 .ayuda-redes-a h4{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
     color: white;
     display: flex;
     align-items: center;
@@ -371,9 +764,6 @@ form{
 }
 
 
-
-
-
 /* -----------------------------------Pagina Stock en linea---- --------------------------- */
 
 .productos h2{
@@ -394,9 +784,9 @@ form{
 
 }
 
- div .guantes-ex{
+div .guantes-ex{
     margin: 30px;
- }
+}
 
 .guantes-ex{
     display: flex;
@@ -415,7 +805,7 @@ form{
 }
 
 .guantes-ex img:hover{
-    transform:scale(2);
+    transform:scale(1.3);
     transition: 2s;
     border: 2px solid black;
 
@@ -461,20 +851,29 @@ form{
 }
 
 .imagenes-box article{
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
     align-content: center;
 
 }
 
 .imagenes-box article img{
+    object-fit: cover;
     margin: 25px;
     width: 50rem;
 } 
+.imagenes-box article img:hover{
+    transform:scale(1.2) ;
+    box-shadow: 40px 30px 30px ;
+}
 
 .imagenes-box div{
     background-color: rgba(0, 0, 0, 0.362);
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
     background-size: cover;
 }
 

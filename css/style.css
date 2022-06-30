@@ -17,343 +17,151 @@
     }
 }
 
-header{
-    border:1px solid rgba(0, 0, 0, 0.165)
+@media screen and (min-width:0px) and (max-width:575px){
+
+    #ayuda-ayuda ul li a{
+        font-size: 10px;
+    }
+    #titulo-ayuda{
+        font-size: 10px;
+    }
+
+    #ayuda-redes-img{
+        display: flex;
+        flex-direction: column;
+    }
+    #ayuda-redes-img img{
+        width: 20px;
+    }
+    #textarea-footer{
+        font-size: 12px;
+}
+    #copyright-footer{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:991px)
+{    
+    
+    #ayuda-ayuda ul li a{
+    font-size: 10px;
+}
+
+    #ayuda-redes-img{
+    position: relative;
+    left: 4%;
+    bottom: 20px;   
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+    #ayuda-redes-img img{
+    width: 20px;
+}
+    #textarea-footer{
+    font-size: 15px;
+}
+    #copyright-footer{
+    font-size: 15px;
+}
+}
+
+#busqueda-header {
+    width: 100%;
+    border-radius: 20px;
+    border-color:rgba(0, 0, 0, 0.342)
+}
+
+.logo-box{
+    width: 120px;
+}
+div article h1{
+    margin-top: 13%;
 }
 article p {
-    margin-top: 7%;
+    margin-top: 3%;
     margin-bottom: 2%;
     color: rgb(255, 0, 0);
 }
-
-main article h2>strong{
-    color:rgba(255, 0, 0, 0.4)
-}
-
 #article-inicio{
     margin-top: 10rem;
 }
-
 main article{
     margin-top: 25rem;
 }
-
 main article iframe{
+    margin-bottom: 10%;
     clip-path: circle(12% at center);
     transition: ease-in-out;
     transition: 2s;
     transform: scale(1.3);
 }
-
 main article iframe:hover{
     clip-path: circle(100% at center);
 }
-
-footer{ 
-    margin-top: 20%;
-    background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    grid-template-columns:60% 40%;
-    grid-template-rows: 10vh repeat(2,20vh);
-    grid-template-areas:
-    "Redes-a Redes-a"
-    "Ayuda-a Form"
-    "Ayuda-a Copyright"
-    ;
-}
-
-.copyright{
-    grid-area: Copyright;
-}
-
-.copyright{
-    color: white;
-    display: flex;
-    align-items:flex-end;
-    justify-content: end;
+#soporte a{
     padding: 20px;
-}
-
-
-.ayuda-ayuda h4{
-    padding: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-}
-
-.ayuda-ayuda a{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px;
-    color: white;
     text-decoration: none;
 }
-.ayuda-ayuda a:hover{
 
-    background-color: rgb(165, 42, 42);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    padding: 5px;
+footer ul li{
+    margin: 15px;
+    list-style: none;
 }
 
-
-.ayuda-redes-a{
-    grid-area: Redes-a;
+#ayuda-redes-img img{
+    width: 80px;
+    padding: 3px;
 }
 
-.ayuda-redes-a h4{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
+#contenedor-footer{
+    margin-bottom: 30px;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.255);
 }
 
-.ayuda-redes-a {
-    display: flex;
-    position: relative;
-    justify-content: stretch;
-    align-items:center;
-    top: 30px;
+#imagen-footer{
+    padding-top: 20px;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.255);
+    display:inline-flex;
+    justify-content:center ;
 }
-
-form{
-    grid-area: Form;
-}
-
-
-/* MEDIA-------QUERIES-INDEX---------------- */
-@media screen and (max-width:575px){
-    .copyright{
-        font-size: 3px;
-    }
-    .copyright img{
-        width: 15px;
-    }
-    .ayuda-ayuda{
-        flex-direction: column;
-    }
-    .ayuda-ayuda a{
-        position: relative;
-        left: 20px;
-        font-size: 7px;
-        font-weight:bold;
-    }
-    .ayuda-ayuda h4{
-        position: relative;
-        left: 3px;
-        font-size: 15px;
-    }
-    .ayuda-redes-a h4{
-        font-size: 15px;
-    }
-    .ayuda-redes-a img{
-        width: 15px;
-    }
-    textarea{
-        font-size: 3px;
-    }
-    input{
-        font-size: 7px;
-    }
-
-
-
-}
-
-
-
-/* -------------------------------- Pagina Contacto -----------------*/ 
-
-.contacto-section{
-
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    margin: 50rem;
-}
-
-.contacto-section h2{
-    font-size: 4rem;
-    position: relative;
-    bottom: 35rem;
-    font-family:'Courier New', Courier, monospace
-}
-
-.contacto-section article img{
-
-    position: relative;
-    bottom: 20rem;
-    left: 32rem;
-}
-
-.contacto-section textarea {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 4.5rem; 
-    bottom: 10rem;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.contacto-section input{
-    position: relative;
-    left: 32rem; 
-    bottom: 10rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    height: 30px;
-    width: 120px;
-}
-
-
-/* -----------------------------------Pagina Stock en linea---- --------------------------- */
-
-.productos h2{
-    color:white ;
-    background-color: rgba(255, 0, 0, 0.384);
-    display: flex;
-    justify-content: center;
-    margin: 15rem;
-    padding:7px;
-    font-family:fantasy;
-    font-size: 5rem;
-}
-
-.presentacion{
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-
-}
-
-div .guantes-ex{
-    margin: 30px;
-}
-
-.guantes-ex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border: solid 3px;
-    padding: 5rem;
-}
-
-.guantes-ex h3{
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgb(0, 0, 0);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.guantes-ex img:hover{
-    transform:scale(1.3);
+#imagen-footer img{
+    opacity: 0.4;
     transition: 2s;
-    border: 2px solid black;
-
+}
+#imagen-footer img:hover{
+    opacity: 1;
+    transition: 2s;
 }
 
-.guantes-ex label{
-    display: flex;
-    justify-content: center;
-    color: black;
-    font: 900;
-    font-size: 2.5rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.guantes-ex a{
-
-    color: black;
-    text-decoration: none;
-    margin: 20px;
-    border: solid 2px;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.guantes-ex a:hover{
-    background-color: rgba(80, 78, 78, 0.582);
-}
-
-.h4{
-
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-}
-
-
-/* ----------------------------Pagina Imagenes--------------------------------*/
-
-.imagenes-box{
-    margin:35rem 0rem;
-    overflow-x: scroll;
-}
-
-.imagenes-box article{
-    justify-content: space-evenly;
-    display: flex;
-    align-content: center;
-
-}
-
-.imagenes-box article img{
-    object-fit: cover;
-    margin: 25px;
-    width: 50rem;
-} 
-.imagenes-box article img:hover{
-    transform:scale(1.2) ;
-    box-shadow: 40px 30px 30px ;
-}
-
-.imagenes-box div{
-    background-color: rgba(0, 0, 0, 0.362);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem;
-    background-size: cover;
-}
-
-.imagenes-box div h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
-    color: white;
+#textarea-footer textarea{
+    font-weight: bold;
+    padding: 8px;
     text-align: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4rem 2px white;
+    transition: 1s;
+}
+#textarea-footer textarea:focus{
+    background-color:rgb(250, 248, 248);
+    transition: 1s;
+    opacity: 0.5;
 }
 
-
-
-/* ----------------------------------Pagina sede-.--------------- */
-
-.titulo-sede{
-    margin: 25rem 0rem;
-    background-color: rgba(0, 0, 0, 0.195);
-    padding: 20px;
+form label{
+    padding: 3px;
 }
 
-.section2 div h3{
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+form label>input{
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    opacity: 2;
+    transition: 2s;
 }
 
-.section2 div{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5%;
+form label>input:focus {
+    background-color:white;
+    transition: 1s;
+    opacity: 0.5;
 }

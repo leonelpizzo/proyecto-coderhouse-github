@@ -80,15 +80,16 @@
 .logo-box{
     width: 120px;
 }
+
 #article1{
 
     margin-bottom: 30%;
 }
 
-div article h1{
+#article-inicio h1{
     margin-top: 5%;
 }
-article p {
+#parrafo-inicio {
     margin-top: 3%;
     margin-bottom: 2%;
     color: rgba(255, 0, 0, 0.537);
@@ -96,17 +97,17 @@ article p {
 #article-inicio{
     margin-top: 10rem;
 }
-main article{
+#article2-main{
     margin-top: 25rem;
 }
-main article iframe{
+#article2-main iframe{
     margin-bottom: 10%;
     clip-path: circle(15% at center);
     transition: ease-in-out;
     transition: 2s;
     transform: scale(1);
 }
-main article iframe:hover{
+#article2-main iframe:hover{
     clip-path: circle(100% at center);
 }
 #soporte a{
@@ -190,4 +191,75 @@ footer ul li{
     transition: 2s;
     transform: scale3d(1.3, 1.3, 1.3);
 
+}
+
+/* ---------PAGINA IMAGENES----- */
+#parrafo-img{
+    margin-top: 30px;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    transition: 1.5s;
+}
+#parrafo-img:hover{
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+#parrafo-img span{
+    color: red;
+}
+
+#imagenes{
+    padding: 5px;
+    margin-top: 30px;
+    height: 450px;
+}
+
+#imagenes img{
+    object-fit: cover;
+    margin: 4px;
+    transition: 1;
+}
+#imagenes img:hover{
+    margin: 5px;
+    transition: 1;
+    transform: scale(1.1);
+}
+
+
+#pq-elegirnos{
+    margin-top: 40%;
+}
+
+#recorrido{
+    margin:30% 0;
+}
+#card-recorrido{
+    transition: 2s;
+    box-shadow: 2px 2px 15px 5px black;
+}
+#card-recorrido:hover{
+    transition: 2s;
+    transform: scale(0.9);
+}
+
+#recorrido img{
+    transition: 1s;
+}
+
+#valoraciones img{
+    height: auto;
+    border: 3px black solid;
+    margin: 8px;
+    object-fit: contain;
+    transition: 1s;
+    box-shadow: 2px 10px 15px 1px black;
+}
+#valoraciones img:hover{
+    margin:1.5rem;
+    transition: 1s;
+    transform: scale(1.3);
+}
+
+#valoraciones{
+    margin: 20% 0;
 }

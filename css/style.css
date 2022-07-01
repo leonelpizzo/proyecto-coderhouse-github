@@ -5,19 +5,18 @@
     box-sizing: border-box;
 }
 
+
+
 /*-------------------------------- bootstrap index--------------------------------- */
-@media screen and (max-width:545px){
-.navbar-brand{
-    text-align:end;
-}
-}
-@media screen and (min-width:200px) and (max-width:787px){
+
+
+
+@media screen and (max-width:575px){
     #parrafo-inicio{
         font-size: 14px;
     }
-}
+    }
 
-@media screen and (min-width:0px) and (max-width:575px){
 
     #ayuda-ayuda ul li a{
         font-size: 10px;
@@ -27,47 +26,53 @@
     }
 
     #ayuda-redes-img{
+        position: relative;
+        bottom: 10%;
+        left: 9.5%;
         display: flex;
         flex-direction: column;
     }
-    #ayuda-redes-img img{
-        width: 20px;
-    }
-    #textarea-footer{
-        font-size: 12px;
-}
+
     #copyright-footer{
-        font-size: 12px;
+        text-align: center;
+        font-size: 9px;
     }
-}
 @media screen and (min-width:576px) and (max-width:991px)
 {    
-    
+
+    #parrafo-inicio{
+        font-size: 17px;
+    }
+
     #ayuda-ayuda ul li a{
-    font-size: 10px;
+        font-size: 13px;
+    }
+    #copyright-footer{
+        text-align: center;
+        font-size: 12px;
+    }
 }
 
-    #ayuda-redes-img{
-    position: relative;
-    left: 4%;
-    bottom: 20px;   
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
+.carousel-inner{
+    width: auto;
+    height: auto;
 }
-    #ayuda-redes-img img{
-    width: 20px;
+
+#ver-mas-carousel:hover{
+    background-color: red;
 }
-    #textarea-footer{
-    font-size: 15px;
+
+#Slider-carousel{
+    width: 30%;
+    margin-top: 25%;
+    margin-bottom: 30%;
 }
-    #copyright-footer{
-    font-size: 15px;
-}
+
+#article2-main{
+    margin-bottom: 20%;
 }
 
 #busqueda-header {
-    width: 100%;
     border-radius: 20px;
     border-color:rgba(0, 0, 0, 0.342)
 }
@@ -75,13 +80,18 @@
 .logo-box{
     width: 120px;
 }
+#article1{
+
+    margin-bottom: 30%;
+}
+
 div article h1{
-    margin-top: 13%;
+    margin-top: 5%;
 }
 article p {
     margin-top: 3%;
     margin-bottom: 2%;
-    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.537);
 }
 #article-inicio{
     margin-top: 10rem;
@@ -91,10 +101,10 @@ main article{
 }
 main article iframe{
     margin-bottom: 10%;
-    clip-path: circle(12% at center);
+    clip-path: circle(15% at center);
     transition: ease-in-out;
     transition: 2s;
-    transform: scale(1.3);
+    transform: scale(1);
 }
 main article iframe:hover{
     clip-path: circle(100% at center);
@@ -103,9 +113,11 @@ main article iframe:hover{
     padding: 20px;
     text-decoration: none;
 }
-
+footer{
+    overflow: hidden;
+}
 footer ul li{
-    margin: 15px;
+    margin-bottom: 15px;
     list-style: none;
 }
 
@@ -114,54 +126,68 @@ footer ul li{
     padding: 3px;
 }
 
-#contenedor-footer{
-    margin-bottom: 30px;
-    border-bottom: 8px solid rgba(255, 255, 255, 0.255);
-}
 
 #imagen-footer{
-    padding-top: 20px;
-    border-bottom: 8px solid rgba(255, 255, 255, 0.255);
-    display:inline-flex;
-    justify-content:center ;
+    padding-top: 30px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.255);
+    display:flex;
+    justify-content:start ;
 }
 #imagen-footer img{
     opacity: 0.4;
-    transition: 2s;
+    transition: 1s;
 }
 #imagen-footer img:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
     opacity: 1;
+    transition: 1s;
+}
+
+#contenedor-footer{
+    border-bottom: 2px solid white;
+}
+
+#footer-email-textarea{
     transition: 2s;
 }
 
-#textarea-footer textarea{
-    font-weight: bold;
-    padding: 8px;
-    text-align: center;
-    border-radius: 30px;
-    box-shadow: 1px 1px 4rem 2px white;
-    transition: 1s;
-}
-#textarea-footer textarea:focus{
+#footer-email-textarea:hover{
     background-color:rgb(250, 248, 248);
     transition: 1s;
     opacity: 0.5;
 }
 
-form label{
-    padding: 3px;
+#ayuda-ayuda ul li a{
+    transition: 0.5s;
+    font-size: 20px;
 }
 
-form label>input{
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 5px;
-    opacity: 2;
+#ayuda-ayuda a:hover{
+    transition: 0.5s;
+    background-color: rgba(255, 0, 0, 0.315);
+    border-radius: 70px;
+
+}
+
+#copyright-footer p{
+    font-size: 15px;
+    padding-top: 10px;
     transition: 2s;
 }
 
-form label>input:focus {
-    background-color:white;
-    transition: 1s;
-    opacity: 0.5;
+#copyright-footer p:hover{
+    color: gray;
+    font-size: 16px;
+    transition: 0.7s;
+}
+
+#article-inicio h1{
+    transition: 2s;
+}
+
+#article-inicio h1:hover{
+    color: rgba(21, 21, 21, 0.517);
+    transition: 2s;
+    transform: scale3d(1.3, 1.3, 1.3);
+
 }

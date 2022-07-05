@@ -1,0 +1,61 @@
+/* ----------Pagina Stock------ */
+
+#section-img{
+    margin-bottom: 20%;
+}
+
+#section-div{
+    margin-top: 8%;
+}
+
+#section-div {
+    span{color: red;} 
+}
+
+#span-section-div{
+    font-size: 11px;
+}
+
+#section-div{
+    h1{transition: 1s;
+    &:hover{    
+        font-size: 2.7rem;
+        transition: 1s;}}
+}
+
+#imagenes-section{
+    img{margin: 5px;
+    object-fit: cover;
+    height: 450px;
+    transition: 1;
+    &:hover{
+        margin: 5px;
+        transition: 1;
+        transform:scale(1.1)
+    }}
+}
+
+/* ---------Pagina Stock | PRODUCTOS------- */
+
+#productos-div{
+    margin-bottom: 15%;
+}
+
+#div-h2{
+    margin-bottom: 60px;
+}
+
+#productos-h2{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $color-terciario;
+}
+
+#card-productos{
+    box-shadow: 2px 1px 15px 6px;
+    margin:30px 40px;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}

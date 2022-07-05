@@ -373,3 +373,21 @@ footer ul li{
 #tiempos-estimados{
     margin-top: 8%;
 }
+
+#p-sede p{
+    transition: 1s;
+}
+
+#p-sede p:hover{
+    color: rgba(255, 0, 0, 0.373);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#parada-sede h1{
+    transition: 1s;
+}
+#parada-sede h1:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}

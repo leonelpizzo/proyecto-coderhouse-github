@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap">
+        <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap fs-5">
             <div class="container-fluid">
                 <a id="logo-principal" class="navbar-brand" href=""><img class="logo-box"
                         src="../imagenes/logoboxing2.png" alt="logo-pagina"></a>
@@ -38,16 +38,17 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                ¿En que podemos ayudarte?
+                                +
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item fw-bold opacity-50" href="../pages/sede.html">Sede</a></li>
-                                <li><a class="dropdown-item fw-bold opacity-50"
-                                        href="#ayuda-ayuda">Politica de privacidad</a></li>
+                                <li><a class="dropdown-item fw-bold opacity-50" href="#ayuda-ayuda">Politica de
+                                        privacidad</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item fw-bold opacity-50" href="ayuda-redes">Redes Sociales</a></li>
+                                <li><a class="dropdown-item fw-bold opacity-50" href="ayuda-redes">Redes Sociales</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -65,21 +66,77 @@
         </nav>
     </header>
 
-    
+
 
 
 
     <!-- ------main+iframe------------------------ -->
     <main>
-        <article id="article2-main">
-            <h2 id="h2-article" class="d-flex justify-content-center fw-bold justify-content-xs-center text-center">
-                Local Al Publico |--> CABA(San Isidro)
-            </h2>
-            <iframe class="container col justify-content-center d-flex"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52627.45126477653!2d-58.563609338725755!3d-34.47205185626051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653668813032!5m2!1ses-419!2sar"
-                width="100%" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </article>
+        <div class="container">
+            <div class="row">
+                <div id="h1-main" class="col-12 text-center">
+                    <h1 class="fw-bold fs-3 fst-italic mt-2">
+                        ¡HOLA! ¿<span style="color: red;">COMO</span> PODEMOS <span style="color: red;">AYUDARTE?</span> 
+                    </h1>
+                </div >
+                <div id="textarea-contacto" class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="" id="textarea-Contacto2"
+                            style="height: 300px"></textarea>
+                        <label for="textarea-Contacto" id="label-textarea" class="fw-bold fs-4">Escribi aqui, todas tus dudas/preguntas, en breve seras respondido!
+                            Tene en cuenta, de dejar un Email.
+                            ej: username@gmail/hotmail.com</label>
+                    </div>
+                </div>
+
+
+                <section>
+
+                    <div id="archivo-contacto" class="col-12 mb-3">
+                        <label for="formFile" class="form-label fw-bold d-flex justify-content-center fs-5 fst-italic mt-2"> ¡Mandanos una captura de tu
+                            inconveniente!</label>
+                        <input class="form-control" type="file" id="Inconveniente-img">
+                        <a href="#" class="btn btn-danger mt-2 d-flex justify-content-center">Enviar</a>
+                    </div>
+                    <div class="col-12" id="div-p">
+                    <p class="fw-bold fs-2 text-center fst-italic mt-2">+ INFO</p>
+                    </div>
+                    <div id="img-scroll" class="container col-12 d-flex justify-content-center">
+                    <img src="../imagenes/scrolling.gif" alt="">
+                    </div>
+
+                </section>
+
+                <article id="article2-main">
+                    <h2 id="h2-article" class="d-flex justify-content-center fw-bold justify-content-xs-center text-center">
+                        DONDE UBICARNOS | <span class="ms-2" style="color:red ;"> SAN ISIDRO</span>
+                    </h2>
+                    <iframe class="container col justify-content-center d-flex"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52627.45126477653!2d-58.563609338725755!3d-34.47205185626051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653668813032!5m2!1ses-419!2sar"
+                        width="100%" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </article>
+            </div>
+
+
+            <h2 class="text-center fw-bold fst-italic mt-2">¡SI TE SIRVIO NUESTRA AYUDA, VALORANOS!</h2>
+            <div id="valoranos" class="input-group container-fluid col-12">
+                <select class="form-select" id="inputGroupSelect04" aria-label="Valoranos">
+                    <option selected>¿Cuanto nos calificarias del 1 al 10?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <button class="btn btn-outline-danger" type="Boton-Enviar">Enviar</button>
+            </div>
+        </div>
     </main>
 
     <!-- -----------------------Footer (bs)-------------------------- -->
@@ -94,7 +151,8 @@
                 <ul id="soporte" class="text-decoration-none">
                     <li><a href="../pages/contacto.html" class="m-auto p-3 fw-bold text-white">Soporte</a></li>
                     <li><a href="../pages/contacto.html" class="m-auto p-3 fw-bold text-white">Terminos de uso</a></li>
-                    <li><a href="../pages/contacto.html" class="m-auto p-3 fw-bold text-white">Politica de privacidad</a></li>
+                    <li><a href="../pages/contacto.html" class="m-auto p-3 fw-bold text-white">Politica de
+                            privacidad</a></li>
                 </ul>
             </div>
             <div id="ayuda-redes" class="col-ms-6 col-md-6 col-lg-3">
@@ -106,23 +164,26 @@
                             alt="Red instagram"></a>
                     <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png"
                             alt="Red Facebook"></a>
-                    </div>
                 </div>
-        
-        <div id="contenedor-footer" class="row">
-            <div class="mb-3 text-white fw-bold container col-lg-6" >
-                <label for="exampleFormControlInput1" class="form-label">Email |</label>
-                <input  id="footer-email-textarea" type="email" class="form-control" id="exampleFormControlInput1" placeholder="¡Deja tu mail para comunicarnos!">
             </div>
-            <div class="mb-3 text-white fw-bold col-lg-6">
-                <label for="Textarea | dudas-consultas" class="form-label">Consultas |</label>
-                <textarea  id="footer-email-textarea" class="form-control" style="height: 20px;" id="Textarea-footer" placeholder="Seras respondido a la brevedad. Al finalizar, deja tu nombre completo!" rows="3"></textarea>
+
+            <div id="contenedor-footer" class="row">
+                <div class="mb-3 text-white fw-bold container col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Email |</label>
+                    <input id="footer-email-textarea" type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="¡Deja tu mail para comunicarnos!">
+                </div>
+                <div class="mb-3 text-white fw-bold col-lg-6">
+                    <label for="Textarea | dudas-consultas" class="form-label">Consultas |</label>
+                    <textarea id="footer-email-textarea" class="form-control" style="height: 20px;" id="Textarea-footer"
+                        placeholder="Seras respondido a la brevedad. Al finalizar, deja tu nombre completo!"
+                        rows="3"></textarea>
+                </div>
+
             </div>
-        
-        </div>
-        <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white fw-bold">
-            <p>©2022 TODOS LOS DERECHOS RESERVADOS | <strong class="fst-italic m-2">LEONEL PIZZO</strong></p>
-        </div>
+            <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white fw-bold">
+                <p>©2022 TODOS LOS DERECHOS RESERVADOS | <strong class="fst-italic m-2">LEONEL PIZZO</strong></p>
+            </div>
     </footer>
 
 

@@ -58,9 +58,6 @@
     height: auto;
 }
 
-#ver-mas-carousel:hover{
-    background-color: red;
-}
 
 #Slider-carousel{
     width: 30%;
@@ -262,4 +259,117 @@ footer ul li{
 
 #valoraciones{
     margin: 20% 0;
+}
+
+
+/* ----------Pagina Stock------ */
+
+#section-img{
+    margin-bottom: 20%;
+}
+
+#section-div{
+    margin-top: 8%;
+}
+
+#section-div span{
+    color: red;
+}
+
+#span-section-div{
+    font-size: 11px;
+}
+
+#section-div h1{
+    transition: 1s;
+}
+
+#section-div h1:hover{
+    font-size: 2.7rem;
+    transition: 1s;
+}
+
+#imagenes-section img{
+    margin: 5px;
+    object-fit: cover;
+    height: 450px;
+    transition: 1;
+}
+
+#imagenes-section img:hover{
+    margin: 5px;
+    transition: 1;
+    transform:scale(1.1)
+
+}
+
+/* ---------PRODUCTOS------- */
+
+#productos-div{
+    margin-bottom: 15%;
+}
+
+#div-h2{
+    margin-bottom: 60px;
+}
+
+#productos-h2{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#card-productos{
+    box-shadow: 2px 1px 15px 6px;
+    margin:30px 40px;
+    transition: 1s;
+}
+
+#card-productos:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+
+/* --------------Pagina Contacto------------ */
+
+#h1-main{
+    margin-top: 12%;
+}
+
+#textarea-contacto{
+    margin-top: 45px;
+}
+
+#archivo-contacto{
+    margin-top: 14%;
+}
+#div-p{
+    margin-top: 15%;
+}
+#img-scroll{
+    margin-top: 5%;
+}
+#img-scroll img{
+    width: 190px;
+}
+#valoranos{
+    margin:60px 0px;
+    margin-bottom: 20%;
+}
+
+
+/* ------PAGINA SEDE---------- */
+
+#article-main-sede{
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+#parada-sede{
+    margin-top: 5%;
+}
+
+#tiempos-estimados{
+    margin-top: 8%;
 }

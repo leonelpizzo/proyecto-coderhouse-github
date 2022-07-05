@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap">
+        <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap fs-5">
             <div class="container-fluid">
                 <a id="logo-principal" class="navbar-brand" href=""><img class="logo-box"
                         src="../imagenes/logoboxing2.png" alt="logo-pagina"></a>
@@ -45,7 +45,8 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item fw-bold opacity-50" href="#ayuda-redes">Redes Sociales</a></li>
+                                <li><a class="dropdown-item fw-bold opacity-50" href="#ayuda-redes">Redes Sociales</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -62,107 +63,125 @@
             </div>
         </nav>
     </header>
-    
-<!------ ASIDE--- -->
-<div id="Slider-carousel" class="carousel carousel-dark slide w-50 container" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="0" class="active"
-            style="background-color: black;" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="1" aria-label="Slide 2"
-            style="background-color: black;"></button>
-        <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="2" aria-label="Slide 3"
-            style="background-color: black;"></button>
-    </div>
-    <div id="carousel-img" class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../imagenes/everlast-pro.jpg" class="img-fluid d-block w-100" alt="Foto Producto | Everlast-pro">
-            <div class="carousel-caption d-none d-md-block text-white">
-                <div class="bg-dark p-3 m-2">
-                    <h6>DESTACADO <span class="badge bg-secondary text-white">Nuevo</span></h6>
-                    <a href="../pages/guantes-en-stock.html" class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
+
+    <!------ NO MAIN--------- -->
+    <section id="section-img" class="container-fluid row align-items-center text-center justify-content-center">
+        <div id="section-div" class="fw-bold col-12 col-lg-12 fs-4">
+            <h1 class="col-12 col-lg-12 fst-italic m-2">
+                PRODUCTOS <span>SOBRESALIENTES</span> EN <span>MERCADOS</span> INTERNACIONALES.</h1>
+            <p class="col-12 col-lg-12 fst-italic m-2">-¡Perspectiva desde dentro!-</p>
+            <span id="span-section-div" class="opacity-50">clickea alguna imagen para saber +</span>
+        </div>
+        <div id="imagenes-section" class="col-sm-12 col-md-12 col-lg-12 pt-5 w-50 d-flex">
+            <img class="col-3" src="../imagenes/control-de-calidad.jpg" alt="">
+            <img class="col-3" src="../imagenes/contro-de-calidad-2.jpg" alt="">
+            <img class="col-3" src="../imagenes/control-de-calidad-3.jpg" alt="">
+            <img class="col-3" src="../imagenes/control-de-calidad-2.jpg" alt="">
+        </div>
+    </section>
+
+
+    <!------------------ main------------------- -->
+
+<main>
+    <div id="productos" class="container-fluid">
+        <div id="productos-div" class="col-lg-12 row justify-content-center">
+            <div id="div-h2">
+            <h2 id="productos-h2" class="fw-bold fs-1 text-center fst-italic m-2">PRODUCTOS EN STOCK</h2>
+            </div>
+            <div id="card-productos" class="card" style="width: 30rem;">
+                <img id="card-img" src="../imagenes/corti-box.jpg" class="card-img-top" alt="Producto corti 1936">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mt-2 fst-italic m-2 text-center">GUANTES CORTI 1936</h5> <hr>
+                    <p class="card-text fw-bold opacity-75">Guantes conformado por 100% cuero vacuno con cordones. 
+                        16oz-14oz-12oz-10oz</p>
+                    <a href="#" class="btn btn-outline-danger">Comprar</a>
+                </div>
+            </div>
+                <div id="card-productos" class="card" style="width: 30rem;">
+                    <img src="../imagenes/proyect-premium.jpg" class="card-img-top" alt="Producto project premium">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mt-2 fst-italic m-2 text-center">GUANTES PROJECT PREMIUM</h5><hr>
+                        <p class="card-text fw-bold opacity-75">Guantes de boxeo premium, material de muy buena calidad.
+                        14oz-12oz</p>
+                        <a href="#" class="btn btn-outline-danger">Comprar</a>
+                    </div>
+                </div>
+                <div id="card-productos" class="card" style="width: 30rem;">
+                    <img src="../imagenes/everlast-pro.jpg" class="card-img-top" alt="Producto Everlast Pro">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mt-2 fst-italic m-2 text-center">GUANTES EVERLAST PRO</h5><hr>
+                        <p class="card-text fw-bold opacity-75">Guantes de boxeo importados, uso exclusivamente profesional.
+                            10oz</p>
+                        <a href="#" class="btn btn-outline-danger">Comprar</a>
+                    </div>
+                </div>
+                <div id="card-productos" class="card" style="width: 30rem;">
+                    <img src="../imagenes/tittle-guantes-exhibir.jpg" class="card-img-top" alt="Producto Tittle (Marca de USA)">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mt-2 fst-italic m-2 text-center">GUANTES TITTLE(USA)</h5><hr>
+                        <p class="card-text fw-bold opacity-75">Guantes de boxeo importados,combinado con un excelente agarre y material. 
+                            18oz-16oz-14oz</p>
+                        <a href="#" class="btn btn-outline-danger">Comprar</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <a href=""><img src="../imagenes/proyect-premium.jpg" class=" img-fluid d-block w-100" alt="Foto Producto | proyect-premium"></a>
-            <div class="carousel-caption d-none d-md-block text-white">
-                <div class="bg-dark p-3 m-2">
-                    <h6>DESTACADO <span class="badge bg-secondary text-white">Nuevo</span></h6>
-                    <a href="../pages/guantes-en-stock.html" class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
+    </main>
+    <!-- -----------------------Footer (bs)-------------------------- -->
+    <footer class="bg-black container-fluid align-items-center">
+
+        <div class="row">
+
+            <div id="imagen-footer">
+                <img src="../imagenes/logoboxing2.png" width="120px" alt="Logo de la pagina">
+            </div>
+            <div id="ayuda-ayuda" class="col-ms-6 col-md-6 col-lg-9">
+                <h4 id="titulos-ayuda" class="fw-bold fs-1 m-auto p-5 text-white">AYUDA</h4>
+                <ul id="soporte" class="text-decoration-none">
+                    <li><a href="" class="m-auto p-3 fw-bold text-white">Soporte</a></li>
+                    <li><a href="" class="m-auto p-3 fw-bold text-white">Terminos de uso</a></li>
+                    <li><a href="" class="m-auto p-3 fw-bold text-white">Politica de privacidad</a></li>
+                </ul>
+            </div>
+            <div id="ayuda-redes" class="col-ms-6 col-md-6 col-lg-3">
+                <h4 id="titulo-redes" class="fw-bold fs-1 m-2 p-5 text-white">REDES</h4>
+                <div id="ayuda-redes-img" class="mb-5 ms-3 row">
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/twitter.png"
+                            alt="Red twitter" src="https://twitter.com/?lang=es"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png"
+                            alt="Red instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png"
+                            alt="Red Facebook"></a>
                 </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <a href=""><img src="../imagenes/tittle-guantes-exhibir.jpg" class="d-block img-fluid  w-100"
-                    alt="Foto Producto | tittle-guantes"></a>
-            <div class="carousel-caption d-none d-md-block text-white">
-                <div class="bg-dark p-3 m-2">
-                <h6>DESTACADO <span class="badge bg-secondary text-white">Nuevo</span></h6>
-                <a href="../pages/guantes-en-stock.html" class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
+
+            <div id="contenedor-email-footer" class="row">
+                <div class="mb-3 text-white fw-bold container col-lg-6">
+                    <label for="footer-email-textarea" class="form-label">Email |</label>
+                    <input id="footer-email-textarea" type="email" class="form-control"
+                        placeholder="¡Deja tu mail para comunicarnos!">
                 </div>
+                <div class="mb-3 text-white fw-bold col-lg-6">
+                    <label for="Textarea | dudas-consultas" class="form-label">Consultas |</label>
+                    <textarea id="footer-consultas-textarea" class="form-control" style="height: 20px;"
+                        id="Textarea-footer"
+                        placeholder="Seras respondido a la brevedad. Al finalizar, deja tu nombre completo!"
+                        rows="3"></textarea>
+                </div>
+
             </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#Slider-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#Slider-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </button>
-</div>
-
-<!-- -----------------------Footer (bs)-------------------------- -->
-<footer class="bg-black container-fluid align-items-center">
-
-<div class="row">
-
-    <div id="imagen-footer">
-        <img src="../imagenes/logoboxing2.png" width="120px" alt="Logo de la pagina">
-    </div>
-    <div id="ayuda-ayuda" class="col-ms-6 col-md-6 col-lg-9">
-        <h4 id="titulos-ayuda" class="fw-bold fs-1 m-auto p-5 text-white">AYUDA</h4>
-        <ul id="soporte" class="text-decoration-none">
-            <li><a href="" class="m-auto p-3 fw-bold text-white">Soporte</a></li>
-            <li><a href="" class="m-auto p-3 fw-bold text-white">Terminos de uso</a></li>
-            <li><a href="" class="m-auto p-3 fw-bold text-white">Politica de privacidad</a></li>
-        </ul>
-    </div>
-    <div id="ayuda-redes" class="col-ms-6 col-md-6 col-lg-3">
-        <h4 id="titulo-redes" class="fw-bold fs-1 m-2 p-5 text-white">REDES</h4>
-        <div id="ayuda-redes-img" class="mb-5 ms-3 row">
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/twitter.png"
-                    alt="Red twitter" src="https://twitter.com/?lang=es"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png"
-                    alt="Red instagram"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png"
-                    alt="Red Facebook"></a>
+            <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white fw-bold">
+                <p>©2022 TODOS LOS DERECHOS RESERVADOS | <strong class="fst-italic m-2">LEONEL PIZZO</strong></p>
             </div>
-        </div>
-
-<div id="contenedor-email-footer" class="row">
-    <div class="mb-3 text-white fw-bold container col-lg-6" >
-        <label for="footer-email-textarea" class="form-label">Email |</label>
-        <input  id="footer-email-textarea" type="email" class="form-control" placeholder="¡Deja tu mail para comunicarnos!">
-    </div>
-    <div class="mb-3 text-white fw-bold col-lg-6">
-        <label for="Textarea | dudas-consultas" class="form-label">Consultas |</label>
-        <textarea  id="footer-consultas-textarea" class="form-control" style="height: 20px;" id="Textarea-footer" placeholder="Seras respondido a la brevedad. Al finalizar, deja tu nombre completo!" rows="3"></textarea>
-    </div>
-
-</div>
-<div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white fw-bold">
-    <p>©2022 TODOS LOS DERECHOS RESERVADOS | <strong class="fst-italic m-2">LEONEL PIZZO</strong></p>
-</div>
-</footer>
+    </footer>
 
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
     ">
     </script>
-    </body>
+</body>
 
 </html>

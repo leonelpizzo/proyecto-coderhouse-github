@@ -9,7 +9,7 @@
 }
 
 #article1 {
-  margin-bottom: 30%;
+  margin-bottom: 10%;
 }
 
 #article-inicio h1 {
@@ -26,6 +26,11 @@
   margin-top: 10rem;
 }
 
+#img-scroll-index {
+  height: 170px;
+  margin-bottom: 20%;
+}
+
 /* ------------Pagina index| MAIN-------- */
 #article2-main {
   margin-bottom: 20%;
@@ -39,7 +44,6 @@
   transition: 2s;
   transform: scale(1);
 }
-
 #article2-main iframe:hover {
   clip-path: circle(100% at center);
 }
@@ -47,6 +51,12 @@
 #soporte a {
   padding: 20px;
   text-decoration: none;
+}
+
+#parrafo-aside span {
+  margin-bottom: 2%;
+  margin-left: 10px;
+  color: red;
 }
 
 /*-------------Pagina Index|  FOOTER------------ */
@@ -109,7 +119,7 @@ footer ul li {
   padding-top: 10px;
   transition: 2s;
 }
-#copyright-footer p:hover {
+#copyright-footer:hover {
   color: gray;
   font-size: 16px;
   transition: 0.7s;
@@ -170,7 +180,7 @@ footer ul li {
 }
 #card-recorrido:hover {
   transition: 2s;
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 
 #recorrido img {
@@ -321,7 +331,6 @@ footer ul li {
 
 #Slider-carousel {
   width: 30%;
-  margin-top: 25%;
   margin-bottom: 30%;
 }
 

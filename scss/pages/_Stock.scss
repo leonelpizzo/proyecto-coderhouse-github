@@ -9,7 +9,7 @@
 }
 
 #section-div {
-    span{color: red;} 
+    strong{color: red;} 
 }
 
 #span-section-div{
@@ -38,24 +38,22 @@
 /* ---------Pagina Stock | PRODUCTOS------- */
 
 #productos-div{
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 #div-h2{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 #productos-h2{
-    background-color: rgba(0, 0, 0, 0.3);
-    color: $color-terciario;
+    color: $color-principal
 }
 
 #card-productos{
-    box-shadow: 2px 1px 15px 6px;
-    margin:30px 40px;
+    margin:10px 40px;
     transition: 1s;
     &:hover{
-        transform: scale(1.1);
-        transition: 1s;
+        transform: scale(0.9);
+        transition: 0.5s;
     }
 }

@@ -1,909 +1,421 @@
-/*---------------------------------------------- valores default 0 --------*/
-* {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #soporte-plataformas-div {
+    width: 100%;
+  }
+  #article-ilustrativo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #card-gral {
+    width: 10rem;
+    height: 300px;
+  }
+  iframe {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* -----------------HASTA 575(PANTALLAS MINIS)-------------------- */
-@media screen and (max-width:575px){
-    .copyright{
-        font-size: 3px;
-    }
-    .copyright img{
-        width: 15px;
-    }
-    .ayuda-ayuda{
-        flex-direction: column;
-    }
-    .ayuda-ayuda a{
-        position: relative;
-        left: 20px;
-        font-size: 7px;
-        font-weight:bold;
-    }
-    .ayuda-ayuda h4{
-        position: relative;
-        left: 3px;
-        font-size: 15px;
-    }
-    .ayuda-redes-a h4{
-        font-size: 15px;
-    }
-    .ayuda-redes-a img{
-        width: 15px;
-    }
-    textarea{
-        font-size: 3px;
-    }
-    input{
-        font-size: 7px;
-    }
-    .section1{
-        margin-top: 8rem;
-        margin-bottom: 20rem;
-    }
-    .section1 h2 strong{
-        text-align: center;
-        font-size: 20px;
-    }
-    .section1 .label-section1{
-        font-size: 12.5px;
-    }
-    .section2 article>h3{
-        font-size: 1rem;
-    }
-    .section2 article>iframe{
-        width: 100rem;
-    }
-    .barra-navegadora li>a{
-        text-align: center;
-        font-size: 9px;
-    }
-    .barra-navegadora ul{
-        border-radius: 20px;
-        flex-direction:column;
-    }
-    .h1{
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .grid-contenedor-padre{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-areas: 
-        "header header"
-        "main1 aside"
-        "main2 aside"
-        "footer footer"
-        ;
-    }
-    main .section1{
-        grid-area: main1;
-    }
-    main .section2{
-        grid-area: main2;
-    }
-    header{
-        grid-area: header;
-    }
-    footer{
-        grid-area: footer;
-    }
-    aside{
-        grid-area: aside;
-    }
-    .aside:hover{
-        clip-path: circle(100% at right center);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border: 2px solid black;
-    }  
-    .aside{
-        margin: 25px 0px;
-        background-color:white;
-        box-shadow: 10px 20px 50px 1px;
-        clip-path: circle(13% at right center);
-        transition-timing-function: ease-in-out;
-        transition-duration: 2s;
-    }
-    .aside div{
-        margin-top: 100px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    .aside p{
-        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
-        text-align: center;
-        font-size: 0.5rem;
-        background-color: rgba(0, 0, 0, 0.452);
-        color: white;
-    }
-    .aside a{
-        margin-top: 30px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    
-    .aside a:hover{
-        background-color: rgba(0, 0, 0, 0.19);
-        border-radius: 20px;
-    }
+.logo-box {
+  width: 110px;
 }
 
-/* ------------------DE 576 A 768PX------------------------------*/
-@media screen and (min-width:576px) and (max-width:768px){  
-    .copyright{
-        font-size: 7px;
-    }
-    .copyright img{
-        width: 20px;
-    }
-    .ayuda-ayuda a{
-        font-size: 13px;
-        position: relative;
-        right: 30px;
-        font-weight:bold;
-    }
-    .ayuda-ayuda{
-        gap: 10px;
-        display: flex;
-        align-items: center;
-    }
-    .ayuda-ayuda h4{
-        font-size: 1.7rem;
-    }
-    .ayuda-redes-a h4{
-        font-size: 1.7rem;
-    }
-    .ayuda-redes-a img{
-        width: 29px;
-    }
-    textarea{
-        font-size: 8px;
-    }
-    .section1{
-        margin-top: 8rem;
-        margin-bottom: 20rem;
-    }
-    .section1 h2 strong{
-        text-align: center;
-        font-size: 20px;
-    }
-    .section1 .label-section1{
-        font-size: 15px;
-    }
-    .section2 article>h3{
-        font-size: 1rem;
-    }
-    .barra-navegadora li>a{
-        font-size: 12px;
-    }
-    .barra-navegadora ul{
-        border-radius: 60px;
-        flex-direction:column;
-    }
-    .h1{
-        font-size: 3.5rem;
-        text-align: center;
-    }
-    .textarea-footer{
-        margin-right: 20px;
-    }
-    .grid-contenedor-padre{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-areas: 
-        "header header"
-        "main1 aside"
-        "main2 aside"
-        "footer footer"
-        ;
-    } 
-    main .section1{
-        grid-area: main1;
-    }
-    main .section2{
-        grid-area: main2;
-    }
-    header{
-        grid-area: header;
-    }
-    footer{
-        grid-area: footer;
-    }
-    aside{
-        grid-area: aside;
-    }
-    .aside:hover{
-        clip-path: circle(100% at right center);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border: 8px solid black;
-        margin: 30px 0px;
-    }
-    .aside{
-        background-color:white;
-        box-shadow: 20px 10px 40px 20px;
-        clip-path: circle(10% at right center);
-        transition-timing-function: ease-in-out;
-        transition-duration: 2s;
-    }
-    .aside div{
-        margin-top: 100px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    } 
-    .aside p{
-        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
-        text-align: center;
-        font-size: 1rem;
-        background-color: rgba(0, 0, 0, 0.452);
-        color: white;
-    } 
-    .aside a{
-        margin-top: 30px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    .aside a:hover{
-        background-color: rgba(0, 0, 0, 0.19);
-        border-radius: 20px;
-    }
+#bienvenidos-contenedor {
+  margin-top: 3%;
+}
+#bienvenidos-contenedor p {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 4px double rgb(0, 0, 0);
+  border-width: 5px 0;
+  padding: 2rem 0;
 }
 
-
-/* ------------------DE 769 A 992PX---------------------------- */
-@media screen and (min-width:769px) and (max-width:992px)
-{
-    .h1{
-        font-size: 4rem;
-    }
-    .section2 article h3{
-        font-size: 2rem;
-    }
-    .textarea-footer{
-        position: relative;
-        right: 25px;
-    }
-    textarea{
-        font-size: 10px;
-    }
-    .section1{
-        margin-top: 15rem;
-    }
-    .section1 h2 strong{
-        text-align: center;
-        font-size: 30px;
-    }
-    .barra-navegadora li>a{
-        font-size: 18px;
-    }
-    .barra-navegadora ul{
-        border-radius: 80px;
-        flex-direction:column;
-    }
-    .h1{
-        text-align: center;
-    }
-    .copyright{
-        font-size: 10px;
-    }
-    .ayuda-ayuda a{
-        font-size: 13px;
-        position: relative;
-        right: 30px;
-        font-weight:bold;
-    }
-    .ayuda-ayuda{
-        gap: 10px;
-        display: flex;
-        align-items: center;
-    }
-    .ayuda-ayuda h4{
-        font-size: 2rem;
-    }
-    .ayuda-redes-a h4{
-        font-size: 2rem;
-    }
-    .ayuda-redes-a img{
-        width: 35px;
-    }
-    .copyright img{
-        width: 30px;
-    }
-    .textarea-footer{
-        margin-right: 20px;
-    }
-    .grid-contenedor-padre{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-rows: (repeat,1fr);
-        grid-template-areas: 
-        "header header "
-        "main1 aside"
-        "main2 aside"
-        "footer footer"
-        ;
-    }
-    main .section1{
-        grid-area: main1;
-    }
-    main .section2{
-        grid-area: main2;
-    }
-    header{
-        grid-area: header;
-    }
-    footer{
-        grid-area: footer;
-    }
-    aside{
-        grid-area: aside;
-    }
-    .aside:hover{
-        clip-path: circle(100% at right center);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border: 8px solid black;
-        margin: 30px 0px;
-    }
-    .aside{
-        background-color:white;
-        box-shadow: 20px 10px 40px 20px;
-        clip-path: circle(10% at right center);
-        transition-timing-function: ease-in-out;
-        transition-duration: 2s;
-    }
-    .aside div{
-        margin-top: 100px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    .aside p{
-        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
-        text-align: center;
-        font-size: 1rem;
-        background-color: rgba(0, 0, 0, 0.452);
-        color: white;
-    }
-    .aside a{
-        margin-top: 30px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    .aside a:hover{
-        background-color: rgba(0, 0, 0, 0.19);
-        border-radius: 20px;
-    }
+#img-scroll-index {
+  height: 150px;
+  margin-top: 5%;
 }
 
-
-/* ------------DE 993PX EN ADELANTE------------- */
-@media(min-width:993px){
-
-    .copyright img{
-        width:40px;
-    }
-    .copyright{
-        font-size: 14px;
-    }
-    .ayuda-ayuda h4{
-        font-size: 3rem;
-    }
-    .ayuda-ayuda a{
-        font-weight: 900;
-    }
-    .ayuda-redes-a h4{
-        font-size: 3rem;
-    }
-    .section2 article h3{
-        font-size: 2rem;
-    }
-    .h1{
-        font-size: 5rem;
-    }
-    .barra-navegadora li>a{
-        font-size: 18px;
-        padding: 7px;
-    }
-    .textarea-footer{
-        margin-right: 20px;
-    }
-    .grid-contenedor-padre{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-rows: 50vh;
-        grid-template-areas: 
-        "header header "
-        "main1 aside"
-        "main2 aside"
-        "footer footer"
-        ;
-    }  
-    main .section1{
-        grid-area: main1;
-    }  
-    main .section2{
-        grid-area: main2;
-    }
-    header{
-        grid-area: header;
-    }
-    footer{
-        grid-area: footer;
-    }
-    aside{
-        grid-area: aside;
-    }
-    .ayuda-ayuda{
-    grid-area: Ayuda-a;
-    }
-    .ayuda-ayuda{
-        gap: 10px;
-        display: flex;
-        align-items: center;
-    }
-    .aside:hover{
-        clip-path: circle(100% at right center);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border: 8px solid black;
-        margin: 30px 0px;
-    }
-    .aside{
-        background-color:white;
-        box-shadow: 20px 10px 40px 20px;
-        clip-path: circle(10% at right center);
-        transition-timing-function: ease-in-out;
-        transition-duration: 2s;
-    }
-    .aside div{
-        margin-top: 100px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    .aside p{
-        text-shadow: 10px 8px 20px rgba(255, 0, 0, 0.342);
-        text-align: center;
-        font-size: 1rem;
-        background-color: rgba(0, 0, 0, 0.452);
-        color: white;
-    }
-    .aside a{
-        margin-top: 30px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    .aside a:hover{
-        background-color: rgba(0, 0, 0, 0.19);
-        border-radius: 20px;
-    }
+#animacion-texto {
+  font: bold 5rem "Oswald", sans-serif;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  /*-----Background Imagen----------*/
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /*-----Animacion Background-------*/
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: animacion 15s linear infinite;
+  /*-----Aceleracion de la animacion-----*/
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
 }
 
-
-/*------------------------------------ Barra navegadora y nav con titulo----------------*/
-
-.barra-navegadora ul{
-    box-shadow: 1px 20px 60px;
-    gap:1.5rem;
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;    
-    background-color: rgba(0, 0, 0, 0.992);
-    margin:40px 100px;
+@-webkit-keyframes animacion {
+  0% {
+    background-position: 10% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+#article-inicio {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+#article-inicio h1 {
+  transition: 1.5s;
+  margin-top: 8%;
+}
+#article-inicio h1:hover {
+  transform: scale(0.9);
 }
 
-.barra-navegadora a {
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: -apple-system, sans-serif;
-}
-.barra-navegadora li {
-    list-style:none;
-    font-weight: 900;
-    font-family: -apple-system, sans-serif;
-    margin: 10px;
-    padding: 10px;
+#parrafo-inicio {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  color: rgba(255, 0, 0, 0.537);
 }
 
-.barra-navegadora li:hover{
-    border-radius: 20px;
-    background-color:rgba(128, 128, 128, 0.418);
-    transition-delay: 0.5ms;
+#card-gral {
+  opacity: 40%;
+  transition: 1s;
+}
+#card-gral:hover {
+  opacity: 100%;
+  transition: 0.5s;
+  transform: scale(0.9);
 }
 
-.h1 {
-    text-shadow:10px 18px 12px rgba(0, 0, 0, 0.555);
-    flex-wrap: wrap;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Michroma', sans-serif;
-
+#soporte-plataformas {
+  margin-top: 15%;
 }
 
-.navegador {
-    margin-top: 20px;
-    position: relative;
-    left: 30%;
-    border-style: none;
-    padding: 9px 22px 9px 22px;
-    border-radius: 30px;
-    border: 2px solid #00000058;
-    font-size: inherit;
-    font-family: inherit;
-    width:40%;
-
+#barra-progreso-hotsale {
+  margin-top: 1%;
+  margin-bottom: 20%;
 }
 
-.navegador input {
-    border: none;
-    width: 100%;
+#article-marcas {
+  margin-top: 10%;
+  margin-bottom: 15%;
 }
 
-
-.navegador:hover input{
-    border: none;
-    background-image: url(../imagenes/icono-busqueda.png);
-    background-position: 100%;
-    background-size: 19px;
-    background-repeat: no-repeat;
-    width: 100%;
-    transition: 2s;
-    font: inherit;
+/* ------------Pagina index| Iframe-------- */
+#article2-iframe {
+  margin-bottom: 15%;
 }
 
-
-/*---------------------------------------------- main+section+article-------------------------*/
-
-
-.section1 article {
-    margin: 22%;
-    margin-bottom: 30%;
+#article2-iframe iframe {
+  opacity: 28%;
+  margin-bottom: 10%;
+  transition: ease-in-out;
+  transition: 2s;
+  transform: scale(1.1);
+}
+#article2-iframe iframe:hover {
+  transition: 1s;
+  opacity: 100%;
 }
 
-.section1 article h2{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.342);
-    color: rgb(0, 0, 0);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
+#soporte a {
+  padding: 20px;
+  text-decoration: none;
 }
 
-.section1 article label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(72, 72, 72, 0.588);
-    font-family: 'Michroma', sans-serif;
-    margin: 10%;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 900;
+#parrafo-aside span {
+  margin-bottom: 2%;
+  margin-left: 10px;
+  color: red;
 }
 
-/*--------------------------------------- Sede+h3+iframe maps---------------- ------------ */
-
-.section2{
-    margin: 20px;
-    margin-bottom: 90px;
+/*-------------Pagina Index|  FOOTER------------ */
+footer {
+  overflow: hidden;
+}
+footer ul li {
+  margin-bottom: 15px;
+  list-style: none;
 }
 
-.section2 article {
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+#ayuda-redes-img img {
+  width: 80px;
+  padding: 3px;
 }
 
-.section2 article iframe {
-    height: 20rem;
-    width: 70%;
-    display:flex;
-    border: 3px solid rgb(0, 0, 0);
+#imagen-footer {
+  padding-top: 30px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.255);
+}
+#imagen-footer img {
+  opacity: 0.4;
+  transition: 1s;
+}
+#imagen-footer img:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  opacity: 1;
+  transition: 1s;
 }
 
-.section2 article h3 {
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+#contenedor-footer {
+  border-bottom: 2px solid white;
 }
 
-
-/*------------------------------------------ footer(AYUDA y REDES) -----------------*/
-
-footer{ 
-    background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    grid-template-columns:60% 40%;
-    grid-template-rows: 10vh repeat(2,20vh);
-    grid-template-areas:
-    "Redes-a Redes-a"
-    "Ayuda-a Form"
-    "Ayuda-a Copyright"
-    ;
+#footer-email-textarea {
+  transition: 2s;
+}
+#footer-email-textarea:hover {
+  background-color: rgb(250, 248, 248);
+  transition: 1s;
+  opacity: 0.5;
 }
 
-.copyright{
-    grid-area: Copyright;
+#ayuda-ayuda {
+  transition: 0.5s;
+  font-size: 20px;
+}
+#ayuda-ayuda ul li a {
+  transition: 0.5s;
+  font-size: 20px;
+}
+#ayuda-ayuda ul li a:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 0, 0, 0.315);
+  border-radius: 70px;
 }
 
-.copyright{
-    color: white;
-    display: flex;
-    align-items:flex-end;
-    justify-content: end;
-    padding: 20px;
+#copyright-footer p {
+  font-size: 15px;
+  padding-top: 10px;
+  transition: 2s;
+}
+#copyright-footer:hover {
+  color: gray;
+  font-size: 16px;
+  transition: 0.7s;
 }
 
-
-.ayuda-ayuda h4{
-    padding: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+/* ---------PAGINA IMAGENES----- */
+#parrafo-img {
+  margin-top: 30px;
+  align-self: center;
+  color: black;
+  transition: 1.5s;
+}
+#parrafo-img:hover {
+  transition: 1.5s;
+  transform: scale(1.1);
 }
 
-.ayuda-ayuda a{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-}
-.ayuda-ayuda a:hover{
-
-    background-color: rgb(165, 42, 42);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    padding: 5px;
+#parrafo-img span {
+  color: red;
 }
 
-
-.ayuda-redes-a{
-    grid-area: Redes-a;
+#imagenes {
+  padding: 5px;
+  margin-top: 30px;
+  height: 450px;
+}
+#imagenes img {
+  object-fit: cover;
+  margin: 4px;
+  transition: 1;
+}
+#imagenes img:hover {
+  margin: 5px;
+  transition: 1;
+  transform: scale(1.1);
 }
 
-.ayuda-redes-a h4{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
+#pq-elegirnos {
+  margin-top: 40%;
 }
 
-.ayuda-redes-a {
-    display: flex;
-    position: relative;
-    justify-content: stretch;
-    align-items:center;
-    top: 30px;
+#recorrido {
+  margin: 30% 0;
 }
 
-
-
-form{
-    grid-area: Form;
+#card-recorrido {
+  transition: 2s;
+  box-shadow: 2px 2px 15px 5px black;
+}
+#card-recorrido:hover {
+  transition: 2s;
+  transform: scale(1.1);
 }
 
-
-
-
-
-/*-------------------------------- Pagina Contacto -------------*/
-
-.contacto-section{
-
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    margin: 50rem;
+#recorrido img {
+  transition: 1s;
 }
 
-.contacto-section h2{
-    font-size: 4rem;
-    position: relative;
-    bottom: 35rem;
-    font-family:'Courier New', Courier, monospace
+#valoraciones {
+  margin: 20% 0;
+}
+#valoraciones img {
+  height: auto;
+  border: 3px black solid;
+  margin: 8px;
+  object-fit: contain;
+  transition: 1s;
+  box-shadow: 2px 10px 15px 1px black;
+}
+#valoraciones img:hover {
+  margin: 1.5rem;
+  transition: 1s;
+  transform: scale(1.3);
 }
 
-.contacto-section article img{
-
-    position: relative;
-    bottom: 20rem;
-    left: 32rem;
+/* ----------Pagina Stock------ */
+#section-img {
+  margin-bottom: 20%;
 }
 
-.contacto-section textarea {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 4.5rem; 
-    bottom: 10rem;
-    font-size: 30px;
-    font-weight: 900;
+#section-div {
+  margin-top: 8%;
 }
 
-.contacto-section input{
-    position: relative;
-    left: 32rem; 
-    bottom: 10rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    height: 30px;
-    width: 120px;
+#section-div strong {
+  color: red;
 }
 
-
-/* -----------------------------------Pagina Stock en linea---- --------------------------- */
-
-.productos h2{
-    color:white ;
-    background-color: rgba(255, 0, 0, 0.384);
-    display: flex;
-    justify-content: center;
-    margin: 15rem;
-    padding:7px;
-    font-family:fantasy;
-    font-size: 5rem;
+#span-section-div {
+  font-size: 11px;
 }
 
-.presentacion{
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-
+#section-div h1 {
+  transition: 1s;
+}
+#section-div h1:hover {
+  font-size: 2.7rem;
+  transition: 1s;
 }
 
-div .guantes-ex{
-    margin: 30px;
+#imagenes-section img {
+  margin: 5px;
+  object-fit: cover;
+  height: 450px;
+  transition: 1;
+}
+#imagenes-section img:hover {
+  margin: 5px;
+  transition: 1;
+  transform: scale(1.1);
 }
 
-.guantes-ex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border: solid 3px;
-    padding: 5rem;
+/* ---------Pagina Stock | PRODUCTOS------- */
+#productos-div {
+  margin-bottom: 10%;
 }
 
-.guantes-ex h3{
-    text-align: center;
-    font-size: 2.5rem;
-    color: rgb(0, 0, 0);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+#div-h2 {
+  margin-bottom: 30px;
 }
 
-.guantes-ex img:hover{
-    transform:scale(1.3);
-    transition: 2s;
-    border: 2px solid black;
-
+#productos-h2 {
+  color: red;
 }
 
-.guantes-ex label{
-    display: flex;
-    justify-content: center;
-    color: black;
-    font: 900;
-    font-size: 2.5rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+#card-productos {
+  margin: 10px 40px;
+  transition: 1s;
+}
+#card-productos:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
 }
 
-.guantes-ex a{
-
-    color: black;
-    text-decoration: none;
-    margin: 20px;
-    border: solid 2px;
-    padding: 10px;
-    border-radius: 20px;
+/* ------PAGINA SEDE---------- */
+#article-main-sede {
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 
-.guantes-ex a:hover{
-    background-color: rgba(80, 78, 78, 0.582);
+#parada-sede {
+  margin-top: 5%;
 }
 
-.h4{
-
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
+#tiempos-estimados {
+  margin-top: 8%;
 }
 
-
-/* ----------------------------Pagina Imagenes--------------------------------*/
-
-.imagenes-box{
-    margin:35rem 0rem;
-    overflow-x: scroll;
+#p-sede p {
+  transition: 1s;
+}
+#p-sede p:hover {
+  color: rgba(255, 0, 0, 0.373);
+  transform: scale(1.1);
+  transition: 1s;
 }
 
-.imagenes-box article{
-    justify-content: space-evenly;
-    display: flex;
-    align-content: center;
-
+#parada-sede h1 {
+  transition: 1s;
+}
+#parada-sede h1:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 
-.imagenes-box article img{
-    object-fit: cover;
-    margin: 25px;
-    width: 50rem;
-} 
-.imagenes-box article img:hover{
-    transform:scale(1.2) ;
-    box-shadow: 40px 30px 30px ;
+/* --------------Pagina Contacto------------ */
+#h1-main {
+  margin-top: 12%;
 }
 
-.imagenes-box div{
-    background-color: rgba(0, 0, 0, 0.362);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem;
-    background-size: cover;
+#textarea-contacto {
+  margin-top: 45px;
 }
 
-.imagenes-box div h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
+#archivo-contacto {
+  margin-top: 14%;
 }
 
-
-
-/* ----------------------------------Pagina sede-.--------------- */
-
-.titulo-sede{
-    margin: 25rem 0rem;
-    background-color: rgba(0, 0, 0, 0.195);
-    padding: 20px;
+#div-p {
+  margin-top: 15%;
 }
 
-.section2 div h3{
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#img-scroll img {
+  width: 210px;
+  margin-top: 7%;
+  margin-bottom: 5%;
 }
 
-.section2 div{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5%;
+#article2-main {
+  margin-top: 5%;
 }
+
+#valoranos {
+  margin: 60px 0px;
+  margin-bottom: 20%;
+}
+
+/*-------Componentes| Carousel--------*/
+.carousel-inner {
+  width: auto;
+  height: auto;
+}
+
+#Slider-carousel {
+  width: 30%;
+  margin-bottom: 2%;
+}
+
+/*----Componentes| Botones-------*/
+#busqueda-header {
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

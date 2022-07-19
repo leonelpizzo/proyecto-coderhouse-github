@@ -1,0 +1,222 @@
+@mixin margin-t-b {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: rgba(255, 0, 0, 0.537);
+}
+
+@mixin iframe {
+    opacity: 28%;
+    margin-bottom: 10%;
+    transition: ease-in-out;
+    transition: 2s;
+    transform: scale(1.1);
+
+    &:hover {
+        transition: 1s;
+        opacity: 100%;
+    }
+}
+
+@mixin imagen-footer {
+    padding-top: 30px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.255);
+
+    img {
+        opacity: 0.4;
+        transition: 1s;
+
+        &:hover {
+            border-bottom: 2px solid rgb(255, 255, 255);
+            opacity: 1;
+            transition: 1s;
+        }
+    }
+}
+
+@mixin ayuda-ayuda {
+    ul {
+        li {
+            a {
+                transition: 0.5s;
+                font-size: 20px;
+
+                &:hover {
+                    transition: 0.5s;
+                    background-color: rgba(255, 0, 0, 0.315);
+                    border-radius: 70px;
+                }
+            }
+        }
+    }
+
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+@mixin copyright-footer {
+    p {
+        font-size: 15px;
+        padding-top: 10px;
+        transition: 2s;
+    }
+
+    &:hover {
+        color: $color-gray;
+        font-size: 16px;
+        transition: 0.7s;
+    }
+}
+
+.logo-box {
+    width: 110px;
+}
+
+#bienvenidos-contenedor {
+    margin-top: 3%;
+    p{ text-transform:uppercase;
+    letter-spacing: 0.5em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: 4px double rgb(0, 0, 0);
+    border-width: 5px 0;
+    padding: 2rem 0;
+    }
+}
+#img-scroll-index {
+    height: 150px;
+    margin-top: 5%;
+}
+
+#animacion-texto {
+        font: bold 5rem "Oswald", sans-serif;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        /*-----Background Imagen----------*/ 
+        background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        /*-----Animacion Background-------*/ 
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: animacion 15s linear infinite;
+        /*-----Aceleracion de la animacion-----*/
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+    }
+    @-webkit-keyframes animacion {
+    0% {background-position: 10% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+#article-inicio {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    h1 {
+        transition: 1.5s;
+        margin-top: 8%;
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+}
+
+#parrafo-inicio {
+    @include margin-t-b;
+}
+
+
+#card-gral {
+    opacity: 40%;
+    transition: 1s;
+
+    &:hover {
+        opacity: 100%;
+        transition: 0.5s;
+        transform: scale(0.9);
+    }
+}
+
+#soporte-plataformas {
+    margin-top: 15%;
+}
+
+#barra-progreso-hotsale {
+    margin-top: 1%;
+    margin-bottom: 20%;
+}
+#article-marcas{
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+/* ------------Pagina index| Iframe-------- */
+#article2-iframe{
+    margin-bottom: 15%;
+}
+
+#article2-iframe iframe {
+    @include iframe;
+}
+
+
+#soporte {
+    a {
+        padding: 20px;
+        text-decoration: none;
+    }
+}
+
+#parrafo-aside {
+    span {
+        margin-bottom: 2%;
+        margin-left: 10px;
+        color: red;
+    }
+}
+
+/*-------------Pagina Index|  FOOTER------------ */
+footer {
+    overflow: hidden;
+
+    ul {
+        li {
+            margin-bottom: 15px;
+            list-style: none;
+        }
+    }
+}
+
+#ayuda-redes-img {
+    img {
+        width: 80px;
+        padding: 3px;
+    }
+}
+
+#imagen-footer {
+    @include imagen-footer;
+}
+
+#contenedor-footer {
+    border-bottom: 2px solid $color-terciario;
+}
+
+#footer-email-textarea {
+    transition: 2s;
+
+    &:hover {
+        background-color: rgb(250, 248, 248);
+        transition: 1s;
+        opacity: 0.5;
+    }
+}
+
+#ayuda-ayuda {
+    @include ayuda-ayuda();
+}
+
+
+#copyright-footer {
+    @include copyright-footer
+}

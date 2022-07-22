@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./imagenes/icono2.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
@@ -16,6 +15,7 @@
         content="Somos un sitio donde podes encontrar y personalizar tu estilo. Productos para el uso cotidiano en el deporte que te desempeñes,hacemos envíos a todos los paises">
     <meta name="keywords" content="EMPRESA ESPECIALIZADA,BOXEADORES,MARCAS IMPORTADAS,PRODUCTOS, PLATAFORMAS">
     <title>Box Sports | Inicio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap"
             style=" font-family: 'Bebas Neue', cursive;">
             <div class="container-fluid">
-                <a id="logo-principal" class="navbar-brand" href=""><img class="logo-box"
+                <a id="logo-principal" class="navbar-brand" href="#"><img class="logo-box"
                         src="./imagenes/logoboxing2.png" alt="logo-pagina"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -45,7 +45,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item opacity-50" href="./pages/sede.html">Sede</a></li>
-                                <li><a class="dropdown-ite opacity-50" href="./pages/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item opacity-50" href="./pages/contacto.html">Contacto</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -71,7 +71,10 @@
     </header>
 
     <!--Introduccion a la pagina (no main) -->
-    <article id="bienvenidos-contenedor" class="container-fluid">
+    <article id="bienvenidos-contenedor" class="container-fluid" data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-out"
+    data-aos-delay="400"
+    data-aos-offset="0">
         <p id="bienvenidos-p" class="fw-bold">
             NOSOTROS SENTIMOS TU PASION
             <span id="animacion-texto" style="font-family: 'Bungee Shade', cursive;">
@@ -82,15 +85,15 @@
     </article>
 
     <div id="img-scroll-index" class="container-fluid col-12 d-flex justify-content-center">
-        <img src="../imagenes/scrolling.gif" alt="Scroleo para abajo">
+        <img src="./imagenes/scrolling.gif" alt="Scroleo para abajo">
     </div>
 
 
     <!-- --------MAIN--------- -->
-    <main>
+    <main style="background-color:rgba(128, 128, 128, 0.100); margin-bottom: 20rem;" class="border-top border-bottom">
         <div id="article1" class="container-fluid row">
 
-            <article id="article-inicio">
+            <article id="article-inicio" data-aos="fade-right">
 
                 <h1 class="fw-bold display-2 d-flex justify-content-lg-center justify-content-md-center text-center">
                     ¡SOLO PARA BOXEADORES!
@@ -102,13 +105,14 @@
                         siempre.
                     </strong>
                 </p>
+            </article>
         </div>
-        </article>
+        
 
-        <section id="article-ilustrativo"
+        <section id="article-ilustrativo" 
             class="d-flex flex-column my-5 justify-content-center align-items-center flex-lg-row">
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border border-danger"
-                style="width: 25rem; height: 600px;">
+            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border-light rounded-5"
+                style="width: 25rem; height: 600px;" data-aos="fade-up">
                 <img src="./imagenes/undraw_fitness_stats_sht6.svg" class="card-img-top"
                     alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
@@ -117,8 +121,8 @@
                         <span>SUPERIORES</span></label>
                 </div>
             </div>
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border border-danger"
-                style="width: 25rem; height: 600px;">
+            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border border-light rounded-5"
+                style="width: 25rem; height: 600px;"data-aos="fade-up">
                 <img src="./imagenes/undraw_working_re_ddwy.svg" class="card-img-top"
                     alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
@@ -127,8 +131,8 @@
                         EN EQUIPO LAS 24HS</label>
                 </div>
             </div>
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-danger"
-                style="width: 25rem; height: 600px;">
+            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-light rounded-5"
+                style="width: 25rem; height: 600px;" data-aos="fade-up">
                 <img src="./imagenes/undraw_logistics_x-4-dc.svg" class="card-img-top"
                     alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
@@ -137,8 +141,8 @@
                         MEJOR LOGISTICA DEL RUBRO</label>
                 </div>
             </div>
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-danger"
-                style="width: 25rem; height: 600px;">
+            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-light rounded-5"
+                style="width: 25rem; height: 600px;" data-aos="fade-up">
                 <img src="./imagenes/undraw_social_media_re_sulg.svg" class="card-img-top"
                     alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
@@ -149,17 +153,18 @@
                 </div>
             </div>
         </section>
+    </main>
 
         <article id="soporte-plataformas" class="container">
             <div class="row text-center">
-                <div id="soporte-plataformas-div" class="col-6 align-items-center justify-content-center mt-5">
+                <div id="soporte-plataformas-div" class="col-lg-6 col-12 align-items-center justify-content-center mt-5">
                     <p class=" d-flex flex-column fw-bold fs-1">DISPONIBLE EN
                         TODAS LAS<strong style="color: red;">| PLATAFORMAS</strong> <span
                             class="fs-5 fst-italic mt-2">www.boxsports.com</span> </p>
                     <img src="./imagenes/icons8-drop-down-96.png" class="" style="width: 100px;" alt="">
                 </div>
-                <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
-                    <img  class="col-lg-6 col-12" src="./imagenes/undraw_mobile_testing_re_w7yb.svg" alt="soporte en mobile">
+                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                    <img  class="col-lg-6" src="./imagenes/undraw_mobile_testing_re_w7yb.svg" alt="soporte en mobile">
                 </div>
             </div>
         </article>
@@ -174,13 +179,13 @@
                 <span class="visually-hidden">Cargando</span>
             </div>
         </section>
-    </main>
+    
 
     <!------------------------------ Aside--------------------------- -->
-    <aside id="aside-ofertas" class="shadow-lg p-5 m-5 rounded border-top">
-        <label for="Nuestros Productos"
-            class="d-flex justify-content-center display-5 fw-bold mb-5 text-black container fst-italic mt-2"
-            style="font-family: 'Bebas Neue', cursive;">¡NO TE PIERDAS NUESTROS
+    <aside id="aside-ofertas" class="p-5 m-5">
+        <label for="Nuestros Productos" data-aos="fade-right"
+            class="d-flex justify-content-center text-center fs-2 fw-bold mb-5 text-black container"
+            style="font-family: 'Bungee Shade', cursive;">¡NO TE PIERDAS NUESTROS
             PRODUCTOS!</strong>
         </label>
         <div class="d-flex justify-content-center align-items-center flex-column">
@@ -189,7 +194,7 @@
         </div>
 
         <div id="Slider-carousel" class="carousel carousel-dark slide container-fluid w-50"
-            style="margin-top: 5%;" data-bs-ride="carousel">
+            style="margin-top: 5%;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="0" class="active"
                     style="background-color: black;" aria-current="true" aria-label="Slide 1"></button>
@@ -246,44 +251,22 @@
                 </button>
             </div>
     </aside>
-    <article id="article-marcas">
-        <div id="carouselExampleFade" class="container-fluid carousel slide carousel-fade w-50" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active d-flex justify-content-center">
-                    <img src="./imagenes/marca-adidas.png" class="d-block justify-content-center w-25" alt="...">
-                </div>
-                <div class="carousel-item d-flex align-items-center justify-content-center">
-                    <img src="./imagenes/marca-corti.png" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item d-flex align-items-center justify-content-center">
-                    <img src="./imagenes/marca-nike.png" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item d-flex align-items-center justify-content-center">
-                    <img src="./imagenes/marca-púma.png" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item d-flex align-items-center justify-content-center">
-                    <img src="./imagenes/marca-tittle.png" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item d-flex align-items-center justify-content-center">
-                    <img src="./imagenes/marca-everlast.png" class="d-block w-25" alt="...">
-                </div>
+    <article id="article-sponsors" class="container-fluid" style="background-color: rgba(0, 0, 0, 0.062); box-shadow: 1px 5px 20px black;">
+        <div class="row">
+            <div class="col-lg-12 col-12  d-flex flex-row justify-content-center align-items-center">
+                <img class="col-1 me-5" src="./imagenes/marca-adidas.png" alt="logo-marca-adidas">
+                <img class="col-1 me-5" src="./imagenes/marca-nike.png" alt="logo-marca-nike">
+                <img class="col-1 me-5" src="./imagenes/marca-everlast.png" alt="logo-marca-everlast">
+                <img class="col-1 me-5" src="./imagenes/marca-corti.png" alt="logo-marca-corti">
+                <img class="col-1 me-5" src="./imagenes/marca-púma.png" alt="logo-marca-puma">
+                <img class="col-1 me-5" src="./imagenes/marca-tittle.png" alt="logo-marca-tittle">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </article>
 
 
     <!-- ------section+iframe------------------------ -->
-    <section id="article2-iframe">
+    <section id="article2-iframe" style="margin-top:15%;">
         <h2 id="h2-article" class="d-flex justify-content-center fw-bold justify-content-xs-center text-center">
             <span>LOCAL AL PUBLICO </span>
             <strong class="ms-1" style="color: red;">| SAN ISIDRO</strong>
@@ -346,14 +329,15 @@
             </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous"></script>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

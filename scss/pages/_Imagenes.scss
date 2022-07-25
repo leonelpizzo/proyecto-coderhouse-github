@@ -13,7 +13,6 @@
     span{color: $color-principal;}
 }
 
-
 #imagenes{
     padding: 5px;
     margin-top: 30px;
@@ -29,12 +28,30 @@
     }   
 }
 
+#no-main{
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+
+
 #pq-elegirnos{
-    margin-top: 40%;
+    box-shadow: 1px 1px 15px black;
+    background: linear-gradient($color-difuminado-black,$color-difuminado-black),url(/imagenes/backgroud-mercadolibre.png),fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: movimiento-img 10s ease-in-out infinite alternate;
+}
+@keyframes movimiento-img{
+    from{
+        background-position: top right;
+    }
+    to{
+        background-position: bottom left;
+    }
 }
 
 #recorrido{
-    margin:30% 0;
+    margin:15% 0;
 }
 #card-recorrido{
     transition: 2s;
@@ -61,6 +78,6 @@
     &:hover{
         margin:1.5rem;
         transition: 1s;
-        transform: scale(1.3);
+        transform: scale(1.1);
     }} 
 }

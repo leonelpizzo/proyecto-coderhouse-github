@@ -1,7 +1,147 @@
+/*------Pagina index------------*/
+@media screen and (min-width: 0px) and (max-width: 568px) {
+  .logo-box {
+    height: 80px;
+    object-fit: contain;
+  }
+  #bienvenidos-contenedor {
+    margin-bottom: 8%;
+  }
+  #bienvenidos-contenedor p {
+    font-size: 11px;
+  }
+  #bienvenidos-contenedor #animacion-texto {
+    font-size: 3.5rem;
+  }
+  #img-scroll-index img {
+    height: 90px;
+  }
+  #article-ilustrativo #card-gral {
+    width: 18rem;
+    height: 450px;
+  }
+  #aside-ofertas label {
+    font-size: 18px;
+  }
+  #aside-ofertas #flechas-negras {
+    margin-bottom: 40px;
+  }
+  #aside-ofertas #flechas-negras img {
+    width: 30px;
+  }
+  #Slider-carousel {
+    width: 300px;
+    height: 300px;
+  }
+  #article-sponsors div div {
+    height: 40px;
+  }
+  #article-sponsors div div img {
+    margin: 3px;
+    width: 40px;
+  }
+  #article2-iframe #navega-map label {
+    font-size: 13px;
+  }
+  #article2-iframe #navega-map img {
+    width: 70px;
+  }
+  #article2-iframe h2 {
+    font-size: 19px;
+  }
+  #article2-iframe iframe {
+    width: 290px;
+    height: 290px;
+  }
+  #imagen-footer img {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 568px) {
+  .logo-box {
+    height: 80px;
+    object-fit: contain;
+  }
+  #bienvenidos-contenedor {
+    margin-bottom: 8%;
+  }
+  #bienvenidos-contenedor p {
+    font-size: 11px;
+  }
+  #bienvenidos-contenedor #animacion-texto {
+    font-size: 3.5rem;
+  }
+  #img-scroll-index img {
+    height: 90px;
+  }
+  #article-ilustrativo #card-gral {
+    width: 18rem;
+    height: 450px;
+  }
+  #aside-ofertas label {
+    font-size: 18px;
+  }
+  #aside-ofertas #flechas-negras {
+    margin-bottom: 40px;
+  }
+  #aside-ofertas #flechas-negras img {
+    width: 30px;
+  }
+  #Slider-carousel {
+    width: 300px;
+    height: 300px;
+  }
+  #article-sponsors div div {
+    height: 40px;
+  }
+  #article-sponsors div div img {
+    margin: 3px;
+    width: 40px;
+  }
+  #article2-iframe #navega-map label {
+    font-size: 13px;
+  }
+  #article2-iframe #navega-map img {
+    width: 70px;
+  }
+  #article2-iframe h2 {
+    font-size: 19px;
+  }
+  #article2-iframe iframe {
+    width: 290px;
+    height: 290px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*---PAGINA EN PROCESO-----*/
+#body-proceso {
+  background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8)), url(/imagenes/background-imagen.jpg);
+  background-position: 200%;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  animation: img-background 10s linear infinite alternate;
+}
+@keyframes img-background {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom left;
+  }
+}
+
+#main-proceso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .logo-box {
@@ -34,18 +174,16 @@
   display: flex;
   justify-content: center;
   /*-----Background Imagen----------*/
-  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  background: url(/imagenes/animated-text-fill.png) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   /*-----Animacion Background-------*/
   -webkit-text-fill-color: transparent;
-  -webkit-animation: animacion 15s linear infinite;
+  animation: animacion 8s ease-in-out infinite alternate;
   /*-----Aceleracion de la animacion-----*/
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
 }
 
-@-webkit-keyframes animacion {
+@keyframes animacion {
   0% {
     background-position: 10% 50%;
   }
@@ -71,6 +209,8 @@
 }
 
 #card-gral {
+  width: 25rem;
+  height: 600px;
   opacity: 40%;
   transition: 1s;
 }
@@ -81,12 +221,34 @@
 }
 
 #soporte-plataformas {
+  box-shadow: 1px 1px 20px black;
+  background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8)), url(/imagenes/todos-los-dispositivos.jpg), fixed;
+  background-size: 250%;
+  background-repeat: no-repeat;
+  animation: movimiento-dispositivos 10s linear alternate infinite;
   margin-top: 15%;
+}
+@keyframes movimiento-dispositivos {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom left;
+  }
+}
+#soporte-plataformas .progress {
+  width: 35%;
+  box-shadow: 1px 2px 8px 1px black;
+  margin: 20px;
 }
 
 #barra-progreso-hotsale {
   margin-top: 1%;
   margin-bottom: 20%;
+}
+
+#aside-ofertas label {
+  font-family: "Bungee Shade", cursive;
 }
 
 #article-sponsors img {
@@ -96,8 +258,13 @@
   transition: 0.7s;
 }
 #article-sponsors img:hover {
-  transition: 0.3s;
-  transform: scale(1.3);
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+
+#navega-map img {
+  width: 120px;
+  margin-top: 20px;
 }
 
 /* ------------Pagina index| Iframe-------- */
@@ -173,11 +340,6 @@ footer ul li {
   transition: 0.5s;
   font-size: 20px;
 }
-#ayuda-ayuda ul li a:hover {
-  transition: 0.5s;
-  background-color: rgba(255, 0, 0, 0.315);
-  border-radius: 70px;
-}
 
 #copyright-footer p {
   font-size: 15px;
@@ -222,12 +384,29 @@ footer ul li {
   transform: scale(1.1);
 }
 
-#pq-elegirnos {
-  margin-top: 40%;
+#no-main {
+  margin-top: 10%;
+  margin-bottom: 30%;
 }
 
+#pq-elegirnos {
+  box-shadow: 1px 1px 15px black;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(/imagenes/backgroud-mercadolibre.png), fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: movimiento-img 10s ease-in-out infinite alternate;
+}
+
+@keyframes movimiento-img {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom left;
+  }
+}
 #recorrido {
-  margin: 30% 0;
+  margin: 15% 0;
 }
 
 #card-recorrido {
@@ -257,7 +436,7 @@ footer ul li {
 #valoraciones img:hover {
   margin: 1.5rem;
   transition: 1s;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 /* ----------Pagina Stock------ */
@@ -393,7 +572,6 @@ footer ul li {
 }
 
 #Slider-carousel {
-  width: 30%;
   margin-bottom: 2%;
 }
 

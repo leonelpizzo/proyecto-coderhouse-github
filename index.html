@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
     <meta name="description"
-        content="Somos un sitio donde podes encontrar y personalizar tu estilo. Productos para el uso cotidiano en el deporte que te desempeñes,hacemos envíos a todos los paises">
-    <meta name="keywords" content="EMPRESA ESPECIALIZADA,BOXEADORES,MARCAS IMPORTADAS,PRODUCTOS, PLATAFORMAS">
+        content="Somos un sitio donde podes encontrar y personalizar tu estilo. Productos para el uso cotidiano en el deporte de boxeo,hacemos envíos a todos los paises">
     <title>Box Sports | Inicio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,8 +22,8 @@
         <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap"
             style=" font-family: 'Bebas Neue', cursive;">
             <div class="container-fluid">
-                <a id="logo-principal" class="navbar-brand" href="#"><img class="logo-box"
-                        src="./imagenes/logoboxing2.png" alt="logo-pagina"></a>
+                <a id="logo-principal" class="navbar-brand" href="./index.html"><img class="logo-box"
+                        src="./imagenes/logoboxing2.png" alt="logo-pagina-BoxSports"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +38,7 @@
                             <a class="nav-link" href="./pages/guantes-en-stock.html">Stock</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Contactanos
                             </a>
@@ -49,20 +48,20 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item opacity-50" href="#">Redes Sociales</a></li>
+                                <li><a class="dropdown-item opacity-50" href="#ayuda-redes">Redes Sociales</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <form class="w-75 d-flex align-items-center justify-content-center p-5" role="search">
+                    <form class="d-flex align-items-center justify-content-center p-5" role="search">
                         <input id="busqueda-header" class="form-control me-1" type="Buscar" placeholder="Buscar"
                             aria-label="Buscar">
-                        <button class="btn" type="submit"><img src="./imagenes/icons8-search.svg" alt="icono-busqueda"
-                                style="height: 15px; width: 14px;"></button>
+                        <button class="btn" type="submit"><img src="./imagenes/icons8-search.svg"
+                                alt="icono-de-busqueda" style="height: 15px; width: 14px;"></button>
                     </form>
-                    <div>
-                        <a href="" class="text-decoration-none text-white btn btn-dark m-1 w-75"
+                    <div class="d-flex flex-column me-2">
+                        <a href="./pages/en-proceso.html" class="text-decoration-none text-white btn btn-dark m-1"
                             style="font-size: 12px;">Iniciar Sesion</a>
-                        <a href="" class="text-decoration-none text-dark btn m-1 w-75"
+                        <a href="./pages/en-proceso.html" class="text-decoration-none text-dark btn m-1"
                             style="font-size: 12px;">Registrarse</a>
                     </div>
                 </div>
@@ -71,10 +70,8 @@
     </header>
 
     <!--Introduccion a la pagina (no main) -->
-    <article id="bienvenidos-contenedor" class="container-fluid" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-out"
-    data-aos-delay="400"
-    data-aos-offset="0">
+    <article id="bienvenidos-contenedor" class="container-fluid" data-aos="fade-zoom-in" data-aos-easing="ease-in-out"
+        data-aos-delay="400" data-aos-offset="0">
         <p id="bienvenidos-p" class="fw-bold">
             NOSOTROS SENTIMOS TU PASION
             <span id="animacion-texto" style="font-family: 'Bungee Shade', cursive;">
@@ -85,7 +82,7 @@
     </article>
 
     <div id="img-scroll-index" class="container-fluid col-12 d-flex justify-content-center">
-        <img src="./imagenes/scrolling.gif" alt="Scroleo para abajo">
+        <img src="./imagenes/scrolling.gif" alt="Scroleo-hacia-abajo">
     </div>
 
 
@@ -107,46 +104,47 @@
                 </p>
             </article>
         </div>
-        
 
-        <section id="article-ilustrativo" 
+
+        <section id="article-ilustrativo"
             class="d-flex flex-column my-5 justify-content-center align-items-center flex-lg-row">
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border-light rounded-5"
-                style="width: 25rem; height: 600px;" data-aos="fade-up">
+            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border-light rounded-5" data-aos="fade-up">
                 <img src="./imagenes/undraw_fitness_stats_sht6.svg" class="card-img-top"
-                    alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
+                    alt="Imagen-ilustrativa-de-estadisticas-fitness" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
-                    <label
+                    <label for="Rendimientos superiores"
                         class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center">RENDIMIENTOS
                         <span>SUPERIORES</span></label>
                 </div>
             </div>
             <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded-5 border border-light rounded-5"
-                style="width: 25rem; height: 600px;"data-aos="fade-up">
+                data-aos="fade-up">
                 <img src="./imagenes/undraw_working_re_ddwy.svg" class="card-img-top"
-                    alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
+                    alt="Imagen-ilustrativa-de-trabajo-en-equipo" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
-                    <label
+                    <label for="Trabajo en equipo"
                         class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center ">TRABAJO
                         EN EQUIPO LAS 24HS</label>
                 </div>
             </div>
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-light rounded-5"
-                style="width: 25rem; height: 600px;" data-aos="fade-up">
+            <div id="card-gral"
+                class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-light rounded-5"
+                data-aos="fade-up">
                 <img src="./imagenes/undraw_logistics_x-4-dc.svg" class="card-img-top"
-                    alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
+                    alt="Imagen-ilustrativa-de-logistica-en-la-empresa" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
-                    <label
+                    <label for="La mejor logistica del rubro"
                         class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center">LA
                         MEJOR LOGISTICA DEL RUBRO</label>
                 </div>
             </div>
-            <div id="card-gral" class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-light rounded-5"
-                style="width: 25rem; height: 600px;" data-aos="fade-up">
+            <div id="card-gral"
+                class="card my-5 m-3 shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-light rounded-5"
+                data-aos="fade-up">
                 <img src="./imagenes/undraw_social_media_re_sulg.svg" class="card-img-top"
-                    alt="Imagen ilustrativa de estadisticas fitness" style="height: 400px; object-fit: contain;">
+                    alt="Imagen-ilustrativa-de-Redes-sociales" style="height: 400px; object-fit: contain;">
                 <div class="card-body">
-                    <label
+                    <label for="Disposicion al cliente y acceso a nuestras redes"
                         class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center">DISPOSICION
                         AL CLIENTE | <a href="#ayuda-redes"
                             style="color: red ; text-decoration: none;"><strong>REDES</strong></a></label>
@@ -155,125 +153,120 @@
         </section>
     </main>
 
-        <article id="soporte-plataformas" class="container">
-            <div class="row text-center">
-                <div id="soporte-plataformas-div" class="col-lg-6 col-12 align-items-center justify-content-center mt-5">
-                    <p class=" d-flex flex-column fw-bold fs-1">DISPONIBLE EN
-                        TODAS LAS<strong style="color: red;">| PLATAFORMAS</strong> <span
-                            class="fs-5 fst-italic mt-2">www.boxsports.com</span> </p>
-                    <img src="./imagenes/icons8-drop-down-96.png" class="" style="width: 100px;" alt="">
-                </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-                    <img  class="col-lg-6" src="./imagenes/undraw_mobile_testing_re_w7yb.svg" alt="soporte en mobile">
-                </div>
+    <article id="soporte-plataformas" class="container-fluid">
+        <div class="row text-center">
+            <div id="soporte-plataformas-div" class="col-lg-12 col-12 align-items-center justify-content-center mt-5">
+                <p class=" d-flex flex-column fw-bold fs-1 text-white">DISPONIBLE EN
+                    TODOS LOS<strong style="color: red;">| DISPOSITIVOS</strong>
+                    <span class="fs-5 fst-italic mt-2">www.boxsports.com</span>
+                </p>
+                <img src="./imagenes/icons8-drop-down-96.png" style="width: 100px;" alt="imagen-ilustrativa-flecha-indicativa">
             </div>
-        </article>
-        <section id="barra-progreso-hotsale" class="container d-flex justify-content-center">
-            <div class="progress" style="width: 50%; box-shadow: 1px 2px 8px 1px black; margin: 20px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold bg-dark fst-italic"
-                    role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+        </div>
+        <section id="barra-progreso-hotsale" class="container d-flex justify-content-center p-5">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold bg-danger fst-italic"
+                    role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                     <strong>2D 23H 59MIN</strong>
                 </div>
             </div>
-            <div class="spinner-border text-primary" role="status" style="margin-left: 10px; margin-top: 10px;">
+            <div class="spinner-border text-danger" role="status" style="margin-left: 10px; margin-top: 10px;">
                 <span class="visually-hidden">Cargando</span>
             </div>
         </section>
-    
+    </article>
+
 
     <!------------------------------ Aside--------------------------- -->
-    <aside id="aside-ofertas" class="p-5 m-5">
+    <aside id="aside-ofertas" class="">
         <label for="Nuestros Productos" data-aos="fade-right"
-            class="d-flex justify-content-center text-center fs-2 fw-bold mb-5 text-black container"
-            style="font-family: 'Bungee Shade', cursive;">¡NO TE PIERDAS NUESTROS
-            PRODUCTOS!</strong>
+            class="d-flex justify-content-center text-center fw-bold mb-5 text-black container-fluid">¡NO TE PIERDAS NUESTROS PRODUCTOS!
         </label>
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <img src="./imagenes/flecha-negras-abajo.png" alt="">
-            <img src="./imagenes/flecha-negras-abajo.png" alt="">
+        <div id="flechas-negras" class="d-flex justify-content-center align-items-center flex-column">
+            <img src="./imagenes/flecha-negras-abajo.png" alt="flecha-indicativa-hacia-abajo">
+            <img src="./imagenes/flecha-negras-abajo.png" alt="flecha-indicativa-hacia-abajo">
         </div>
-
-        <div id="Slider-carousel" class="carousel carousel-dark slide container-fluid w-50"
-            style="margin-top: 5%;">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="0" class="active"
-                    style="background-color: black;" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    style="background-color: black;"></button>
-                <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    style="background-color: black;"></button>
-            </div>
-            <div id="carousel-img" class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./imagenes/everlast-pro.jpg" class="img-fluid d-block w-100"
-                        alt="Foto Producto | Everlast-pro">
-                    <div class="carousel-caption d-none d-md-block text-white">
-                        <div class="bg-dark p-3 m-2">
-                            <h6>DESTACADO <span class="badge bg-primary text-white">Nuevo</span></h6>
-                            <a href="./pages/guantes-en-stock.html"
-                                class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
-                        </div>
-                    </div>
+        <aside id="aside-ofertas">
+            <div id="Slider-carousel" class="carousel carousel-dark slide container-fluid" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="0" class="active"
+                        style="background-color: black;" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        style="background-color: black;"></button>
+                    <button type="button" data-bs-target="#Slider-carousel" data-bs-slide-to="2" aria-label="Slide 3"
+                        style="background-color: black;"></button>
                 </div>
                 <div id="carousel-img" class="carousel-inner">
-                    <div class="carousel-item" data-bs-interval="1000">
-                        <img src="./imagenes/proyect-premium.jpg" class="img-fluid d-block w-100"
-                            alt="Foto Producto | Everlast-pro">
+                    <div class="carousel-item active" data-bs-interval="1700">
+                        <a href="./pages/guantes-en-stock.html"><img src="./imagenes/everlast-pro.jpg" class="img-fluid d-block w-100"
+                            alt="Foto-Producto- Everlast-pro"></a>
                         <div class="carousel-caption d-none d-md-block text-white">
                             <div class="bg-dark p-3 m-2">
-                                <h6>DESTACADO <span class="badge bg-primary text-white">Nuevo</span></h6>
+                                <h6>DESTACADO <span class="badge bg-danger text-white">Nuevo</span></h6>
                                 <a href="./pages/guantes-en-stock.html"
                                     class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
                             </div>
                         </div>
                     </div>
-                    <div id="carousel-img" class="carousel-item">
-                        <a href=""><img src="./imagenes/tittle-guantes-exhibir.jpg" class="d-block img-fluid  w-100"
-                                alt="Foto Producto | tittle-guantes"></a>
+                    <div class="carousel-item" data-bs-interval="1500">
+                        <a href="./pages/guantes-en-stock.html"><img src="./imagenes/proyect-premium.jpg" class=" img-fluid d-block w-100"
+                                alt="Foto-Producto-proyect-premium"></a>
                         <div class="carousel-caption d-none d-md-block text-white">
                             <div class="bg-dark p-3 m-2">
-                                <h6>DESTACADO <span class="badge bg-primary text-white">Nuevo</span></h6>
+                                <h6>DESTACADO <span class="badge bg-danger text-white">Nuevo</span></h6>
+                                <a href="./pages/guantes-en-stock.html"
+                                    class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1500">
+                        <a href="./pages/guantes-en-stock.html"><img src="./imagenes/tittle-guantes-exhibir.jpg" class="d-block img-fluid  w-100"
+                                alt="Foto-Producto-tittle-guantes"></a>
+                        <div class="carousel-caption d-none d-md-block text-white">
+                            <div class="bg-dark p-3 m-2">
+                                <h6>DESTACADO <span class="badge bg-danger text-white">Nuevo</span></h6>
                                 <a href="./pages/guantes-en-stock.html"
                                     class="mt-3 btn btn-outline-secondary text-white">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#Slider-carousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#Slider-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#Slider-carousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#Slider-carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-    </aside>
-    <article id="article-sponsors" class="container-fluid" style="background-color: rgba(0, 0, 0, 0.062); box-shadow: 1px 5px 20px black;">
+        </aside>
+    </aside> 
+        
+    <article id="article-sponsors" class="container"
+        style="background-color: rgba(0, 0, 0, 0.062); box-shadow: 1px 5px 20px black;">
         <div class="row">
-            <div class="col-lg-12 col-12  d-flex flex-row justify-content-center align-items-center">
-                <img class="col-1 me-5" src="./imagenes/marca-adidas.png" alt="logo-marca-adidas">
-                <img class="col-1 me-5" src="./imagenes/marca-nike.png" alt="logo-marca-nike">
-                <img class="col-1 me-5" src="./imagenes/marca-everlast.png" alt="logo-marca-everlast">
-                <img class="col-1 me-5" src="./imagenes/marca-corti.png" alt="logo-marca-corti">
-                <img class="col-1 me-5" src="./imagenes/marca-púma.png" alt="logo-marca-puma">
-                <img class="col-1 me-5" src="./imagenes/marca-tittle.png" alt="logo-marca-tittle">
+            <div class="col-lg-12 col-12 d-flex flex-row justify-content-center align-items-center">
+                <img class="col-1" src="./imagenes/marca-adidas.png" alt="logo-marca-adidas">
+                <img class="col-1" src="./imagenes/marca-nike.png" alt="logo-marca-nike">
+                <img class="col-1" src="./imagenes/marca-everlast.png" alt="logo-marca-everlast">
+                <img class="col-1" src="./imagenes/marca-corti.png" alt="logo-marca-corti">
+                <img class="col-1" src="./imagenes/marca-púma.png" alt="logo-marca-puma">
+                <img class="col-1" src="./imagenes/marca-tittle.png" alt="logo-marca-tittle">
             </div>
         </div>
     </article>
 
 
     <!-- ------section+iframe------------------------ -->
-    <section id="article2-iframe" style="margin-top:15%;">
+    <section id="article2-iframe" style="margin-top:15%;" data-aos="fade-right">
         <h2 id="h2-article" class="d-flex justify-content-center fw-bold justify-content-xs-center text-center">
             <span>LOCAL AL PUBLICO </span>
             <strong class="ms-1" style="color: red;">| SAN ISIDRO</strong>
         </h2>
-        <div class="d-flex flex-row justify-content-center align-items-center mb-5 mt-1">
-            <p style="font-family: 'Bebas Neue', cursive; " class="mt-4"> <ins>Navega por el Mapa</ins></p>
-            <img src="./imagenes/mouse-click.jpg" alt="" style="width: 120px; margin-top: 20px;">
+        <div id="navega-map" class="d-flex flex-row justify-content-center align-items-center mb-5 mt-1">
+            <label for="Navega por el mapa,para ubicarte" style="font-family: 'Bebas Neue', cursive; " class="mt-4"> <ins>Navega por el Mapa</ins></label>
+            <img src="./imagenes/mouse-click.jpg" alt="foto-lustrativa-clickea">
         </div>
         <iframe class="container justify-content-center d-flex"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52627.45126477653!2d-58.563609338725755!3d-34.47205185626051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653668813032!5m2!1ses-419!2sar"
@@ -282,50 +275,51 @@
     </section>
 
     <!-- -----------------------Footer (bs)-------------------------- -->
-    <footer class="bg-black container-fluid align-items-center">
+    <footer class="bg-black container-fluid align-items-center" style="font-family:'Bebas Neue', cursive; ;">
         <div class="row">
 
             <div id="imagen-footer" class="d-flex justify-content-start">
-                <img src="./imagenes/logoboxing2.png" width="120px" alt="Logo de la pagina">
+                <img data-aos="fade-right"data-aos-easing="ease-in-out"
+                data-aos-delay="700" data-aos-offset="0" src="./imagenes/logoboxing2.png" width="120px" alt="Logo-BoxSports2">
             </div>
             <div id="ayuda-ayuda" class="col-ms-6 col-md-6 col-lg-9">
-                <h4 id="titulos-ayuda" class="fw-bold fs-1 m-auto p-5 text-white">AYUDA</h4>
+                <h4 id="titulos-ayuda" class="fs-1 m-auto p-5 text-white">AYUDA</h4>
                 <ul id="soporte" class="text-decoration-none">
-                    <li><a href="" class="m-auto p-3 fw-bold text-white">Soporte</a></li>
-                    <li><a href="" class="m-auto p-3 fw-bold text-white">Terminos de uso</a></li>
-                    <li><a href="#toast" class="m-auto p-3 fw-bold text-white">Politica de privacidad</a></li>
+                    <li><a href="./pages/contacto.html" class="ms-2 p-2 btn btn-outline-danger text-white" style="border:none;">Soporte</a></li>
+                    <li><a href="./pages/en-proceso.html" class="ms-2 p-2 btn btn-outline-danger text-white" style="border:none;">Terminos de uso</a></li>
+                    <li><a href="./pages/en-proceso.html" class="ms-2 p-2 btn btn-outline-danger text-white" style="border:none;">Politica de privacidad</a></li>
                 </ul>
             </div>
             <div id="ayuda-redes" class="col-ms-6 col-md-6 col-lg-3">
-                <h4 id="titulo-redes" class="fw-bold fs-1 m-2 p-5 text-white">REDES</h4>
+                <h4 id="titulo-redes" class="fs-1 m-2 p-5 text-white">REDES</h4>
                 <div id="ayuda-redes-img" class="mb-5 ms-3 row">
                     <a href="https://twitter.com/?lang=es" target="_blank"><img src="./imagenes/twitter (1).png"
-                            alt="Red twitter" src="https://twitter.com/?lang=es"></a>
+                            alt="Red-twitter" src="https://twitter.com/?lang=es"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="./imagenes/instagram (1).png"
-                            alt="Red instagram"></a>
+                            alt="Red-instagram"></a>
                     <a href="https://www.facebook.com/" target="_blank"><img src="./imagenes/facebook (2).png"
-                            alt="Red Facebook"></a>
+                            alt="Red-Facebook"></a>
                 </div>
             </div>
 
             <div id="contenedor-footer" class="row">
-                <div class="mb-3 text-white fw-bold container col-lg-6">
+                <div class="mb-3 text-white container col-lg-6">
                     <label for="exampleFormControlInput1" class="form-label">Email |</label>
                     <input id="footer-email-textarea" type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="¡Deja tu mail para comunicarnos!">
                 </div>
-                <div class="mb-3 text-white fw-bold col-lg-6">
+                <div class="mb-3 text-white col-lg-6">
                     <label for="Textarea | dudas-consultas" class="form-label">Consultas |</label>
                     <textarea id="footer-email-textarea" class="form-control" style="height: 20px;" id="Textarea-footer"
                         placeholder="Seras respondido a la brevedad. Al finalizar, deja tu nombre completo!"></textarea>
                 </div>
-                <div class="col-lg-12 col-6 container-fluid d-flex justify-content-center mt-1 mb-3">
-                    <a class="col-lg-3 btn btn-outline-secondary" href="#">Enviar</a>
+                <div class="col-lg-12 col-6 container-fluid d-flex justify-content-center mt-1 mb-3 w-50">
+                    <a class="col-lg-3 btn btn-outline-light" href="#">Enviar</a>
                 </div>
             </div>
-            <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white fw-bold"
+            <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white"
                 style="font-family: 'Libre Barcode 128 Text', cursive">
-                <p class="fs-2">©2022 TODOS LOS DERECHOS RESERVADOS | <strong>LEONEL PIZZO</strong></p>
+                <p class="fs-2">©2022 TODOS LOS DERECHOS RESERVADOS | <strong style="color: rgba(255, 0, 0, 0.552);">LEONEL PIZZO</strong></p>
             </div>
     </footer>
 

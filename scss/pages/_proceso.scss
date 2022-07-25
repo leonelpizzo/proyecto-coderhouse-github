@@ -1,0 +1,21 @@
+/*---PAGINA EN PROCESO-----*/ 
+#body-proceso{
+    background:linear-gradient(rgba(5,7,12,0.80),rgba(5,7,12,0.80)), url(/imagenes/background-imagen.jpg);
+    background-position: 200%;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    animation: img-background 10s linear infinite alternate;
+    @keyframes img-background {
+        from{background-position: top right;}
+        to{ background-position: bottom left;}
+    }
+}
+
+#main-proceso{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

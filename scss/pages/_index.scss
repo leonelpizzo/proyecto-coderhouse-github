@@ -136,7 +136,7 @@
     background-size: 250%;
     background-repeat: no-repeat;
     animation: movimiento-dispositivos 10s linear alternate infinite;
-    margin-top: 15%;
+    margin-top: 2%;
     @keyframes movimiento-dispositivos{
         from{
             background-position: top right;
@@ -189,6 +189,10 @@
     @include iframe;
 }
 
+#article2-iframe{
+    margin-top: 10rem;
+    margin-bottom: 15%;
+}
 
 #soporte {
     a {

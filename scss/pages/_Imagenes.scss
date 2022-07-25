@@ -35,9 +35,9 @@
 
 
 #pq-elegirnos{
-    box-shadow: 1px 1px 15px black;
+    box-shadow: 1px 1px 5px black;
     background: linear-gradient($color-difuminado-black,$color-difuminado-black),url(/imagenes/backgroud-mercadolibre.png),fixed;
-    background-size: 100%;
+    background-size: 250%;
     background-repeat: no-repeat;
     animation: movimiento-img 10s ease-in-out infinite alternate;
 }

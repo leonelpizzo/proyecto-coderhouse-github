@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*------Pagina index------------*/
 @media screen and (min-width: 0px) and (max-width: 568px) {
   .logo-box {
@@ -11,7 +17,14 @@
     font-size: 11px;
   }
   #bienvenidos-contenedor #animacion-texto {
-    font-size: 3.5rem;
+    /*-----Background Imagen----------*/
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: none;
+    /*-----Animacion Background-------*/
+    -webkit-text-fill-color: none;
+    animation: none;
+    font-size: 3rem;
   }
   #img-scroll-index img {
     height: 90px;
@@ -56,68 +69,109 @@
   #imagen-footer img {
     width: 90px;
   }
-}
-@media screen and (min-width: 568px) {
-  .logo-box {
-    height: 80px;
-    object-fit: contain;
+  #soporte-plataformas {
+    margin-bottom: 12rem;
   }
+}
+@media screen and (min-width: 569px) and (max-width: 768px) {
   #bienvenidos-contenedor {
     margin-bottom: 8%;
   }
   #bienvenidos-contenedor p {
-    font-size: 11px;
+    font-size: 14px;
   }
   #bienvenidos-contenedor #animacion-texto {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   #img-scroll-index img {
-    height: 90px;
-  }
-  #article-ilustrativo #card-gral {
-    width: 18rem;
-    height: 450px;
-  }
-  #aside-ofertas label {
-    font-size: 18px;
-  }
-  #aside-ofertas #flechas-negras {
-    margin-bottom: 40px;
-  }
-  #aside-ofertas #flechas-negras img {
-    width: 30px;
-  }
-  #Slider-carousel {
-    width: 300px;
-    height: 300px;
+    height: 110px;
   }
   #article-sponsors div div {
-    height: 40px;
+    height: 70px;
   }
   #article-sponsors div div img {
     margin: 3px;
+    width: 60px;
+  }
+  #aside-ofertas label {
+    font-size: 22px;
+  }
+  #aside-ofertas #flechas-negras {
+    margin-bottom: 30px;
+  }
+  #aside-ofertas #flechas-negras img {
     width: 40px;
   }
-  #article2-iframe #navega-map label {
-    font-size: 13px;
-  }
-  #article2-iframe #navega-map img {
-    width: 70px;
-  }
-  #article2-iframe h2 {
-    font-size: 19px;
+  #Slider-carousel {
+    width: 400px;
+    height: 410px;
   }
   #article2-iframe iframe {
-    width: 290px;
-    height: 290px;
+    width: 500px;
+    height: 250px;
+  }
+  #soporte-plataformas {
+    margin-bottom: 15rem;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #img-scroll-index img {
+    height: 120px;
+  }
+  #article2-iframe iframe {
+    width: 650px;
+    height: 250px;
+  }
+  #Slider-carousel {
+    width: 550px;
+    height: 570px;
+  }
+  #aside-ofertas label {
+    font-size: 30px;
+  }
+  #aside-ofertas #flechas-negras {
+    margin-bottom: 30px;
+  }
+  #aside-ofertas #flechas-negras img {
+    width: 45px;
+  }
+  #flechas-negras {
+    margin-bottom: 30px;
+  }
+  #flechas-negras img {
+    width: 40px;
+  }
+  #article-sponsors div div {
+    height: 65px;
+  }
+  #article-sponsors div div img {
+    margin: 3px;
+    width: 60px;
+  }
+  #soporte-plataformas {
+    margin-bottom: 15rem;
+  }
 }
-
+@media screen and (min-width: 993px) {
+  #aside-ofertas label {
+    font-size: 35px;
+  }
+  #Slider-carousel {
+    width: 750px;
+    height: 770px;
+  }
+  #article-sponsors div div {
+    height: 85px;
+  }
+  #article-sponsors div div img {
+    margin: 3px;
+    width: 80px;
+  }
+  #article2-iframe iframe {
+    width: 850px;
+    height: 250px;
+  }
+}
 /*---PAGINA EN PROCESO-----*/
 #body-proceso {
   background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8)), url(/imagenes/background-imagen.jpg);
@@ -226,7 +280,7 @@
   background-size: 250%;
   background-repeat: no-repeat;
   animation: movimiento-dispositivos 10s linear alternate infinite;
-  margin-top: 15%;
+  margin-top: 2%;
 }
 @keyframes movimiento-dispositivos {
   from {
@@ -278,6 +332,11 @@
 #article2-iframe iframe:hover {
   transition: 1s;
   opacity: 100%;
+}
+
+#article2-iframe {
+  margin-top: 10rem;
+  margin-bottom: 15%;
 }
 
 #soporte a {
@@ -390,9 +449,9 @@ footer ul li {
 }
 
 #pq-elegirnos {
-  box-shadow: 1px 1px 15px black;
+  box-shadow: 1px 1px 5px black;
   background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(/imagenes/backgroud-mercadolibre.png), fixed;
-  background-size: 100%;
+  background-size: 250%;
   background-repeat: no-repeat;
   animation: movimiento-img 10s ease-in-out infinite alternate;
 }

@@ -11,9 +11,16 @@
     #bienvenidos-contenedor{
         margin-bottom: 8%;
         p{
-            font-size: 21px;}
+            font-size: 11px;}
     #animacion-texto{
-        font-size:3.5rem;}
+        /*-----Background Imagen----------*/ 
+        background: black;
+        -webkit-background-clip: text;
+        background-clip: none;
+        /*-----Animacion Background-------*/ 
+        -webkit-text-fill-color: none;
+        animation:none;
+        font-size:3rem;}
     }
 
     #img-scroll-index{
@@ -93,6 +100,12 @@
         font-size:4rem;}
     }
 
+    #img-scroll-index{
+        img{
+            height: 110px;
+        }
+    }
+
     #article-sponsors{
         div{
             div{
@@ -134,6 +147,12 @@
 }
 
 @media screen and (min-width:769px) and (max-width:992px){
+    #img-scroll-index{
+        img{
+            height: 120px;
+        }
+    }
+    
     #article2-iframe{
         iframe{
             width: 650px;

@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
     <meta name="description"
-    content="Mostramos por encima un poco de lo que conlleva trabajar con nosotros, de que manera desenvolvemos tanto la importación de productos como el despacho del mismo.">
+        content="Mostramos por encima un poco de lo que conlleva trabajar con nosotros, de que manera desenvolvemos tanto la importación de productos como el despacho del mismo.">
     <title>Box Sports | Imagenes</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -23,8 +24,8 @@
         <nav class="navbar navbar-expand-lg bg-light border d-flex flex-wrap"
             style=" font-family: 'Bebas Neue', cursive;">
             <div class="container-fluid">
-                <a id="logo-principal" class="navbar-brand" href=""><img class="logo-box"
-                        src="../imagenes/logoboxing2.png" alt="logo-pagina"></a>
+                <a id="logo-principal" class="navbar-brand" href="/index.html"><img class="logo-box"
+                        src="../imagenes/logoboxing2.png" alt="logo-BoxSports"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -47,25 +48,28 @@
                                 Contactanos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-ite opacity-50 text-decoration-none ms-3 text-black" href="../pages/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-ite opacity-50 text-decoration-none ms-3 text-black"
+                                        href="../pages/contacto.html">Contacto</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item opacity-50" href="#">Politica y privacidad</a></li>
-                                <li><a class="dropdown-item opacity-50" href="#">Redes Sociales</a></li>
+                                <li><a class="dropdown-item opacity-50" href="../pages/en-proceso.html">Politica y
+                                        privacidad</a></li>
+                                <li><a class="dropdown-item opacity-50" href="#ayuda-redes">Redes
+                                        Sociales</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <form class="w-75 d-flex align-items-center justify-content-center p-5" role="search">
+                    <form class="d-flex align-items-center justify-content-center p-5" role="search">
                         <input id="busqueda-header" class="form-control me-1" type="Buscar" placeholder="Buscar"
                             aria-label="Buscar">
-                        <button class="btn" type="submit"><img src="../imagenes/icons8-search.svg" alt="icono-busqueda"
-                                style="height: 15px; width: 14px;"></button>
+                        <button class="btn" type="submit"><img src="../imagenes/icons8-search.svg"
+                                alt="icono-de-busqueda" style="height: 15px; width: 14px;"></button>
                     </form>
-                    <div>
-                        <a href="" class="text-decoration-none text-white btn btn-dark m-1 w-75"
+                    <div class="d-flex flex-column me-4">
+                        <a href="../pages/en-proceso.html" class="text-decoration-none text-white btn btn-dark m-1"
                             style="font-size: 12px;">Iniciar Sesion</a>
-                        <a href="" class="text-decoration-none text-dark btn m-1 w-75"
+                        <a href="../pages/en-proceso.html" class="text-decoration-none text-dark btn m-1"
                             style="font-size: 12px;">Registrarse</a>
                     </div>
                 </div>
@@ -74,118 +78,168 @@
     </header>
 
     <!------NO MAIN------------ -->
-        <div class="container" id="no-main">
-            <section class="row d-flex justify-content-center mt-5">
-                <div id="parrafo-img" class="text-center col-lg-6">
-                    <h1 class="fs-4 fw-bold fst-italic m-2">LA <span>MEJOR CALIDAD</span> DE PRODUCTOS Y ATENCION SOBRE
-                        EL <span class=""> CLIENTE</span></h1>
-                    <p class="fs-5 opacity-50" style="color:rgb(0, 0, 0);">-Fotos ilustrativas-</p>
-                    <a href=""></a>
-                </div>
-                <div id="imagenes" class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
-                    <img src="../imagenes/oficinas2.jpg" alt="Foto ilustrativa embalaje" class="col-2">
-                    <img src="../imagenes/corti-box.jpg" alt="Foto ilustrativa gestion empresarial"
-                        class="col-2">
-                    <img src="../imagenes/everlast-pro.jpg" alt="Foto ilustrativa oficina2" class="col-2">
-                    <img src="../imagenes/local2.jpg" class="col-2"
-                        alt="Foto ilustrativa empaquetado de producto">
-                    <img src="../imagenes/gestion-empresarial.jpg" class="col-2"
-                        alt="Foto ilustrativa oficina1">
+    <div class="container" id="no-main">
+        <section class="row d-flex justify-content-center mt-5">
+            <div id="parrafo-img" class="text-center col-lg-6 col-12">
+                <h1 class="fs-4 fw-bold fst-italic m-2" data-aos="fade-right">LA <span>MEJOR CALIDAD</span> DE PRODUCTOS Y ATENCION SOBRE
+                    EL <span> CLIENTE</span></h1>
+                <p class="fs-5 opacity-50" style="color:rgb(0, 0, 0);">-Fotos ilustrativas-</p>
+            </div>
+            <div id="imagenes" class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+                <img src="../imagenes/oficinas2.jpg" alt="Foto-ilustrativa-embalaje" class="col-2"  data-aos="fade-up">
+                <img src="../imagenes/corti-box.jpg" alt="Foto-ilustrativa gestion-empresarial" class="col-2"  data-aos="fade-up">
+                <img src="../imagenes/everlast-pro.jpg" alt="Foto-ilustrativa-oficina2" class="col-2" data-aos="fade-up">
+                <img src="../imagenes/local2.jpg" class="col-2" alt="Foto-ilustrativa-empaquetado-de-producto" data-aos="fade-up">
+                <img src="../imagenes/gestion-empresarial.jpg" class="col-2" alt="Foto-ilustrativa-oficina1" data-aos="fade-up">
+            </div>
+        </section>
+    </div>
+    
+
+
+    <!---------------MAIN------------ -->
+    <main style="margin-top:10%;">
+        <div class="container-fluid">
+            <section class="row text-center">
+                <div id="pq-elegirnos" class="col-12">
+                    <h2 class="fw-bold display-4 text-white p-5" style="text-shadow: 5px 1px 10px black;"  data-aos="fade-right">¿POR QUE
+                        ELEGIRNOS?</h2>
+                    <label for="Amplio recorrido en el rubro" id="pq-elegirnos-p"
+                        class="fw-bold text-center text-white p-2 mb-3">AMPLIO RECORRIDO | VALORACIONES
+                        COMPROBABLES</label>
                 </div>
             </section>
         </div>
 
-
-    <!---------------MAIN------------ -->
-    <main>
-        <div class="container-fluid">
-            <section class="row text-center">
-                <div id="pq-elegirnos" class="col-12">
-                    <h2 class="fw-bold display-4 text-white p-5" style="text-shadow: 5px 1px 10px black;">¿POR QUE ELEGIRNOS?</h2>
-                    <p id="pq-elegirnos-p" class="fw-bold text-center text-white p-2">AMPLIO RECORRIDO     | VALORACIONES COMPROBABLES</p>
-                </div>         
-            </section>       
+        <section id="section-card" data-aos="zoom-in-down"
+        class="d-flex flex-column my-5 justify-content-around align-items-center flex-lg-row">
+        <div  id="card-img" class="card my-5 m-3 shadow-lg p-3 mb-5  rounded-5 border-light"
+            data-aos="fade-up">
+            <img src="../imagenes/undraw_reviews_lp8w.svg" class="card-img-top border-bottom border-5"
+                alt="Imagen-ilustrativa-de-estadisticas-fitness" style="height: 400px; object-fit: contain;">
+            <div class="card-body">
+                <label for="Rendimientos superiores"
+                    class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center">NUESTRAS VALORACIONES
+                    <span style="color:red;"> DIARIAMENTE CRECEN MAS.</span></label>
+            </div>
         </div>
+        <div  id="card-img" class="card my-5 m-3 shadow-lg p-3 mb-5 rounded-5 border-light"
+        data-aos="zoom-in-down">
+        <img src="../imagenes//undraw_customer_survey_re_v9cj.svg" class="card-img-top border-bottom border-5"
+            alt="Imagen-ilustrativa-de-estadisticas-fitness" style="height: 400px; object-fit: contain;">
+        <div class="card-body">
+            <label for="Rendimientos superiores"
+                class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center">RESPALDADO
+                <span style="color:red;"> POR LOS CLIENTES.</span></label>
+        </div>
+    </div>
+        <div id="card-img"
+            class="card my-5 m-3 shadow-lg p-3 mb-5  rounded rounded-5 border border-light"
+            data-aos="zoom-in-down">
+            <img src="../imagenes/undraw_personal_goals_re_iow7.svg" class="card-img-top border-bottom border-5"
+                alt="Imagen-ilustrativa-de-logistica-en-la-empresa" style="height: 400px; object-fit: contain;">
+            <div class="card-body">
+                <label for="La mejor logistica del rubro"
+                    class="card-text fw-bold mt-5 d-flex flex-column align-items-center justify-content-center">MEJOR CONTENIDO
+                    <span style="color: red;">VISUAL</span></label>
+            </div>
+        </div>
+        </div>
+    </section>
 
         <div class="container">
-                <article id="recorrido" class="row d-flex justify-content-center col-12">
+            <article id="article-recorrido" class="row d-flex justify-content-center col-12">
 
-                    <div id="card-recorrido" class="card" style="width: 25rem;">
+                <div id="card-recorrido" class="card">
+                    <p class="card-text text-center mt-3" style="font-family:'Bebas Neue', cursive; ;">¡NUESTRO RECORRIDO!</p>
 
-                        <img src="../imagenes/recorrido.png" class="card-img-top" alt="...">
-                        <div class="card-body">
 
-                            <p class="card-text text-center fw-bold">¡Nuestro Recorrido!</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item fst-italic m-2 fw-bold" style="color: rgba(0, 0, 0, 0.392);">Calidad-Precio</li>
-                            <li class="list-group-item fst-italic m-2 fw-bold" style="color: rgba(0, 0, 0, 0.392);">Envios en tiempo y forma</li>
-                            <li class="list-group-item fst-italic m-2 fw-bold" style="color: rgba(0, 0, 0, 0.392);">La mejor atencion</li>
-                        </ul>
+                    <img src="../imagenes/recorrido.png" class="card-img-top" alt="Recorrido-en-mercado-libre">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fst-italic m-2 fw-bold" style="color: rgba(0, 0, 0, 0.392);">
+                            Calidad-Precio</li>
+                        <li class="list-group-item fst-italic m-2 fw-bold" style="color: rgba(0, 0, 0, 0.392);">Envios
+                            en tiempo y forma</li>
+                        <li class="list-group-item fst-italic m-2 fw-bold" style="color: rgba(0, 0, 0, 0.392);">La mejor
+                            atencion</li>
+                    </ul>
 
-                        <div class="card-body">
-                            <a href="https://www.mercadolibre.com.ar/" target="_blank" class="card-link btn btn-outline-danger">Ver mas ML📦</a>
-                        </div>
+                    <div class="card-body">
+                        <a href="https://www.mercadolibre.com.ar/" target="_blank"
+                            class="card-link btn btn-outline-danger">Ver mas ML📦</a>
                     </div>
-                </article> 
-
-                <div class="d-flex justify-content-center">
-                    <img  class="col-12 w-50" src="../imagenes/5ESTRELLAS.png" alt="">
                 </div>
+            </article>
 
-                    <div  id="valoraciones" class="container-fluid">
-                        <section class="col-12 d-flex justify-content-center flex-column flex-lg-row align-items-center">
-                            <img class="col-4" src="../imagenes/valoracion1.png" alt="">
-                            <img class="col-4" src="../imagenes/valoracion2.png" alt="">
-                            <img class="col-4"src="../imagenes/valoracion3.png" alt="">
-                        </section>
-                    </div>
+            <div class="d-flex justify-content-center" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <img id="imagen-val" class="col-12" src="../imagenes/5ESTRELLAS.png" alt="foto-ilustrativa-5-estrellas">
+            </div>
+
+            <div id="valoraciones" class="container-fluid">
+                <section class="col-12 d-flex justify-content-center flex-column flex-lg-row align-items-center">
+                    <label data-aos="fade-right" class="card-text text-center mt-3 fs-1 col-12" style="font-family:'Bebas Neue', cursive; ;">¡VALORACIONES DE CLIENTES!<label>
+                    <label id="label-sub" for="clickea para agrandar" class="col-12 mb-5"> <ins style="color: red;">Manten pulsado para agrandar la imagen</ins></label>
+                    <img class="col-3 col-sm-12" src="../imagenes/valoracion1.png"
+                        alt="valoracion-mercado-libre-guantes-everlast" data-aos="zoom-in-down">
+                    <img class="col-3 col-sm-12" src="../imagenes/valoracion2.png"
+                        alt="valoracion-mercado-libre-guantes-proyect" data-aos="zoom-in-down">
+                    <img class="col-3 col-sm-12" src="../imagenes/valoracion3.png"
+                        alt="valoracion-mercado-libre-guantes-corti" data-aos="zoom-in-down">
+                </section>
+            </div>
         </div>
-    </main> 
+    </main>
 
     <!-- -----------------------Footer (bs)-------------------------- -->
     <footer class="bg-black container-fluid align-items-center" style="font-family:'Bebas Neue', cursive; ;">
         <div class="row">
 
-            <div id="imagen-footer">
+            <div id="imagen-footer" data-aos="fade-right">
                 <img src="../imagenes/logoboxing2.png" width="120px" alt="Logo de la pagina">
             </div>
             <div id="ayuda-ayuda" class="col-ms-6 col-md-6 col-lg-9">
-                <h4 id="titulos-ayuda" class="fw-bold fs-1 m-auto p-5 text-white">AYUDA</h4>
+                <h4 id="titulos-ayuda" class=" fs-1 m-auto p-5 text-white">AYUDA</h4>
                 <ul id="soporte" class="text-decoration-none">
-                    <li><a href="" class="m-auto p-3 fw-bold text-white">Soporte</a></li>
-                    <li><a href="" class="m-auto p-3 fw-bold text-white">Terminos de uso</a></li>
-                    <li><a href="" class="m-auto p-3 fw-bold text-white">Politica de privacidad</a></li>
+                    <li><a href="../pages/contacto.html" class="ms-2 p-2 btn btn-outline-danger text-white" style="border:none;">Soporte</a></li>
+                    <li><a href="../pages/en-proceso.html" class="ms-2 p-2 btn btn-outline-danger text-white" style="border:none;">Terminos de uso</a></li>
+                    <li><a href="../pages/en-proceso.html" class="ms-2 p-2 btn btn-outline-danger text-white" style="border:none;">Politica de privacidad</a>
+                    </li>
                 </ul>
             </div>
             <div id="ayuda-redes" class="col-ms-6 col-md-6 col-lg-3">
-                <h4 id="titulo-redes" class="fw-bold fs-1 m-2 p-5 text-white">REDES</h4>
+                <h4 id="titulo-redes" class=" fs-1 m-2 p-5 text-white">REDES</h4>
                 <div id="ayuda-redes-img" class="mb-5 ms-3 row">
                     <a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/twitter (1).png"
-                            alt="Red twitter" src="https://twitter.com/?lang=es"></a>
+                            alt="Red-twitter" src="https://twitter.com/?lang=es"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram (1).png"
-                            alt="Red instagram"></a>
+                            alt="Red-instagram"></a>
                     <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook (2).png"
-                            alt="Red Facebook"></a>
+                            alt="Red-Facebook"></a>
                 </div>
             </div>
 
             <div id="contenedor-footer" class="row">
-                <div class="mb-3 text-white fw-bold container col-lg-6">
-                    <label for="exampleFormControlInput1" class="form-label">Email |</label>
-                    <input id="footer-email-textarea" type="email" class="form-control" id="exampleFormControlInput1"
+                <div class="mb-3 text-white  container col-lg-6">
+                    <label for="Email" class="form-label">Email |</label>
+                    <input id="footer-email-textarea" type="email" class="form-control" id="email-footer"
                         placeholder="¡Deja tu mail para comunicarnos!">
                 </div>
-                <div class="mb-3 text-white fw-bold col-lg-6">
-                    <label for="Textarea | dudas-consultas" class="form-label">Consultas |</label>
+                <div class="mb-3 text-white  col-lg-6">
+                    <label for="Textarea|dudas-consultas" class="form-label">Consultas |</label>
                     <textarea id="footer-email-textarea" class="form-control" style="height: 20px;" id="Textarea-footer"
                         placeholder="Seras respondido a la brevedad. Al finalizar, deja tu nombre completo!"
                         rows="3"></textarea>
                 </div>
+                <div class="col-lg-12 col-6 container-fluid d-flex justify-content-center mt-1 mb-3 w-50">
+                    <a class="col-lg-3 btn btn-outline-light" href="../pages/en-proceso.html">Enviar</a>
+                </div>
 
             </div>
-            <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white fw-bold">
-                <p>©2022 TODOS LOS DERECHOS RESERVADOS | <strong class="fst-italic m-2">LEONEL PIZZO</strong></p>
+            <div id="copyright-footer" class="col d-flex justify-content-center pb-3 text-white"
+                style="font-family: 'Libre Barcode 128 Text', cursive">
+                <p>©2022 TODOS LOS DERECHOS RESERVADOS | <strong style="color: rgba(255, 0, 0, 0.552);">LEONEL PIZZO</strong></p>
             </div>
     </footer>
 
@@ -193,6 +247,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

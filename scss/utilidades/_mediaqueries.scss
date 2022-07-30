@@ -225,5 +225,187 @@
             height: 250px;
         }
     }
+}
+
+
+
+
+/*------------Pagina Imagenes-------------*/
+
+@media screen and (min-width:0px) and (max-width:568px){
+    #imagenes{
+        img{
+        height: 300px;}
+    }
+
+    #pq-elegirnos{
+        label{
+            font-size: 10px;
+        }
+    }
+
+    #card-recorrido{
+        margin-top: 10%;
+        width: 15rem;
+    }
+
+    #imagen-val{
+        width: 220px;
+    }
+
+    #valoraciones{
+        img{
+            width: 270px;
+        }
+        #label-sub{
+            font-size: 12px;
+        }
+    }
+
+    #section-card{
+        #card-img{
+        width: 18rem;
+        height: 400px;
+    }
+    }
+}
+
+@media screen and (min-width:569px){
+
+    #section-card{
+        #card-img{
+        width: 30rem;
+        height: 550px;
+    }
+    }
+
+    #card-recorrido{
+        margin-top: 10%;
+        width: 25rem;
+    }
+
+    #imagen-val{
+        width: 320px;
+    }
+
+
+    #valoraciones{
+        img{
+            width: 370px;
+        }
+    }
 
 }
+
+
+/*-------------Pagina Stock---------------*/
+
+@media screen and (min-width:0px) and (max-width:568px){
+    #imagenes-section{
+        width: 280px;
+        margin-bottom: 10%;
+    }
+    
+    #card-productos{
+        width: 280px; 
+        height: 625px;}
+
+    #imagen-val{
+        margin-top: 5%;
+    }   
+}
+
+@media screen and (min-width:569px){
+    #imagenes-section{
+        width: 520px;
+    }
+    
+    
+    #card-productos{
+        width: 400px; 
+        height: 725px;}
+
+}
+
+/*-----------Pagina Sede--------*/ 
+
+@media screen and (min-width:0px) and (max-width:568px){
+    #parada-sede{
+        font-size: 12px;
+        h1{
+            font-size: 17px;
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+    #p-sede{
+        p{
+        &:hover{
+        transform: scale(0.9);
+        }
+        }
+    }
+
+    #tiempos-estimados{
+        ul{
+            font-size: 10px;
+        }
+    }
+    #h2-article{
+        font-size: 21px;
+    }
+    #copyright-footer{
+        p{
+        font-size: 15px;}
+    }
+}
+
+@media screen and (min-width:569px) and (max-width:993px){
+    #parada-sede{
+        font-size: 16px;
+        h1{
+            font-size: 22px;
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+    #p-sede{
+        p{
+        &:hover{
+        transform: scale(0.9);
+        }
+        }
+    }
+}
+
+
+/*-------Pagina Contacto-------*/
+@media screen and (min-width:0px) and (max-width:568px){
+    #h1-main{
+        h1{
+            font-size: 23px;
+        }
+    }
+
+    #h2-contacto{
+        font-size: 17px;
+    }
+    
+    #archivo-contacto{
+        margin-top: 40%;
+        label{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    #img-scroll{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        img{
+            width: 100px;
+        }
+    }
+}
+
